@@ -1,0 +1,48 @@
+// Add bounce animation
+.bounce-effect {
+  animation: bounce-hero 3s infinite;
+}
+
+@keyframes bounce-hero {
+  0% {
+    transform: scaleY(0.8);
+  }
+  50% {
+    transform: scaleY(1.5);
+  }
+  100% {
+    transform: scaleY(0.8);
+  }
+}
+
+.bounce-effect-twice {
+  animation: bounce-hero-twice 3s infinite;
+}
+
+@keyframes bounce-hero-twice {
+  0% {
+    transform: scaleY(0.8);
+  }
+  50% {
+    transform: scaleY(2.5);
+  }
+  100% {
+    transform: scaleY(0.8);
+  }
+}
+
+.bounce-effect-trice {
+  animation: bounce-hero-trice 3s infinite;
+}
+
+@keyframes bounce-hero-trice {
+  0% {
+    transform: scaleY(0.8);
+  }
+  50% {
+    transform: scaleY(3.5);
+  }
+  100% {
+    transform: scaleY(0.8);
+  }
+}

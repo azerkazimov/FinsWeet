@@ -1,0 +1,62 @@
+.footer {
+    margin-top: 200px;
+    clear: both;
+    color: map-get($colors, natural);
+    background: map-get($colors, inky);
+
+    .footer-widgets {
+
+        @extend .mb-5;
+        .widget {
+
+            h6 {
+                @extend .font-size-20;
+                @extend .mb-6;
+                @extend .font-weight-700;
+                color: map-get($colors, natural)
+            }
+
+
+            .footer-menu {
+                @extend .font-weight-bold;
+
+                li {
+                    @extend .mb-2;
+                    @extend .font-size-16;
+                    @extend .font-weight-400;
+                    line-height: 1.75;
+                    transition: all 0.3s ease;
+
+                    img {
+                        max-width: 70%;
+                        width: auto;
+                    }
+
+                    &:hover {
+                        color: map-get($colors, primary);
+                    }
+                }
+            }
+        }
+
+    }
+
+    .footer-copyright {
+        @extend .py-4;
+        background-color: map-get($colors, primary);
+        clear: both;
+        text-align: center;
+
+        .copyright {
+            a {
+                @extend .font-weight-600;
+                color: map-get($colors, natural);
+                transition: all 0.3s;
+
+                &:hover {
+                    color: map-get($colors, inky);
+                }
+            }
+        }
+    }
+}

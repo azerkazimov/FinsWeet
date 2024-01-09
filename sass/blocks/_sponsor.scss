@@ -1,0 +1,9 @@
+.sponsors{
+    position: relative;
+    @extend .px-10;
+    @extend .py-4;
+    background-color: map-get($colors, primary);
+    top: -140px;
+    max-width: 100%;
+    width: auto;
+}

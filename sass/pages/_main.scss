@@ -1,0 +1,107 @@
+// ===== Main page start start =====
+
+.home {
+  min-width: 100%;
+  @extend .py-8;
+
+  .banner {
+    
+    max-width: 100%;
+
+    .banner-text {
+      @extend .px-3;
+      max-width: 90%;
+
+      h1 {
+        @extend .font-size-48;
+        @extend .font-weight-700;
+        @extend .pb-5;
+        max-width: 100%;
+        color: map-get($colors, inky);
+        line-height: 1.2;
+      }
+
+      p {
+        @extend .font-weight-400;
+        @extend .font-size-16;
+        max-width: 100%;
+        color: map-get($colors, inky);
+        margin-bottom: 30px;
+        line-height: 1.75rem;
+      }
+    }
+
+    .banner-waves {
+      @extend .flex-container;
+      @extend .flex-justify-space-around;
+      @extend .flex-align-center;
+      @extend .px-3;
+
+      max-width: 90%;
+      width: auto;
+      height: 100%;
+
+      .wave {
+        height: 50px;
+        width: 32px;
+        background-color: map-get($colors, primary);
+        margin: 5px;
+      }
+
+      .wave-secondary {
+        background-color: map-get($colors, secondary);
+      }
+    }
+  }
+}
+
+.brands{
+  @extend .py-5;
+}
+
+.podcast {
+
+  .podcast-text {
+    @extend .px-3;
+    max-width: 90%;
+
+    p {
+      @extend .font-weight-400;
+      @extend .font-size-16;
+      max-width: 100%;
+      color: map-get($colors, inky);
+      margin-bottom: 30px;
+      line-height: 1.75rem;
+    }
+  }
+
+  .podcast-image {
+    @extend .p-5;
+    background-color: map-get($colors, primary);
+    max-width: 100%;
+
+    img {
+      position: relative;
+      width: 380px;
+      height: 380px;
+      border-radius: 50%;
+    }
+  }
+}
+
+// ===== Arrow up start =====
+.stiky-arrow-up {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  background: map-get($colors, dark);
+  color: map-get($colors, natural);
+  bottom: 20px;
+  left: 95%;
+  border-radius: 50%;
+}
+
+// ===== Arrow up end =====

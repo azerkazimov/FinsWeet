@@ -1,0 +1,20 @@
+// Merce class for all buttons on page
+.btn {
+  @extend .font-weight-500;
+  @extend .font-size-16;
+  background-color: map-get($colors, primary);
+  color: map-get($colors, light);
+  text-align: center;
+  padding: 14px 30px;
+  border: 0;
+  transition: all 0.3s;
+  cursor: pointer;
+
+  &:hover,
+  :focus,
+  :active {
+    background-color: map-get($colors, info);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  }
+}
+
