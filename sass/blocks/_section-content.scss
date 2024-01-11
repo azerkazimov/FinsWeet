@@ -1,0 +1,95 @@
+// Common styles for sections 
+.section-content {
+  @extend .my-10;
+
+  .section-text {
+    @extend .px-10;
+    @extend .flex-container;
+    @extend .flex-align-center;
+    max-width: 90%;
+
+    p {
+      @extend .font-weight-400;
+      @extend .font-size-16;
+      max-width: 100%;
+      color: map-get($colors, inky);
+      margin-bottom: 30px;
+      line-height: 1.75rem;
+    }
+  }
+
+  .section-image {
+    @extend .flex-container;
+    @extend .flex-justify-center;
+  }
+
+  .podcast-bg {
+    background: linear-gradient(to right,
+        map-get($colors, natural) 0%,
+        map-get($colors, natural) 50%,
+        map-get($colors, primary) 50%,
+        map-get($colors, primary) 100%,
+      );
+  }
+
+  .podcast-image {
+    @extend .p-5;
+    max-width: 100%;
+    position: relative;
+
+    img {
+      width: 380px;
+      height: 380px;
+      border-radius: 50%;
+      object-fit: cover;
+
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      bottom: 15%;
+      left: 0;
+      border-radius: 50%;
+      background: url('../images/pexels-anna-tarazevich-7229039.jpg') center/cover no-repeat;
+      z-index: 56;
+    }
+  }
+
+  .youtube-image {
+    height: 512px;
+    width: 100%;
+    position: relative;
+    background-image: url('../images/man-on-chair-6878173.png');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: contain;
+    z-index: 1;
+    
+
+    .youtube-subscribe {
+      @extend .flex-container;
+      @extend .flex-justify-center;
+      @extend .flex-align-center;
+      @extend .font-size-28;
+
+
+      width: 260px;
+      height: 80px;
+      background-color: map-get($colors, primary);
+      color: map-get($colors, natural);
+      position: absolute;
+      bottom: 60px;
+      right: -20px;
+
+      i {
+        @extend .font-size-32;
+        @extend .mx-2;
+        color: map-get($colors, secondary);
+      }
+    }
+  }
+}

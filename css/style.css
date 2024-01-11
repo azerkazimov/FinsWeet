@@ -118,7 +118,7 @@ a {
   padding-bottom: 10px !important;
 }
 
-.p-3 {
+.p-3, .listener-card-container .card-image .listener-description {
   padding: 15px !important;
 }
 
@@ -138,7 +138,7 @@ a {
   padding-left: 15px !important;
 }
 
-.px-3, .podcast .podcast-text, .home .banner .banner-waves, .home .banner .banner-text {
+.px-3, .home .banner .banner-waves, .home .banner .banner-text {
   padding-left: 15px !important;
   padding-right: 15px !important;
 }
@@ -179,7 +179,7 @@ a {
   padding-bottom: 20px !important;
 }
 
-.p-5, .podcast .podcast-image {
+.p-5, .section-content .podcast-image {
   padding: 25px !important;
 }
 
@@ -204,7 +204,7 @@ a {
   padding-right: 25px !important;
 }
 
-.py-5, .brands {
+.py-5, .brands, .episode-card .episode-card-container {
   padding-top: 25px !important;
   padding-bottom: 25px !important;
 }
@@ -349,7 +349,7 @@ a {
   padding-left: 50px !important;
 }
 
-.px-10, .sponsors {
+.px-10, .section-content .section-text, .sponsors {
   padding-left: 50px !important;
   padding-right: 50px !important;
 }
@@ -431,7 +431,7 @@ a {
   margin-bottom: 10px !important;
 }
 
-.mr-2 {
+.mr-2, .listener-card-container .card-image .listener-description .star-icons, .episode-card i {
   margin-right: 10px !important;
 }
 
@@ -439,7 +439,7 @@ a {
   margin-left: 10px !important;
 }
 
-.mx-2 {
+.mx-2, .section-content .youtube-image .youtube-subscribe i {
   margin-left: 10px !important;
   margin-right: 10px !important;
 }
@@ -449,7 +449,7 @@ a {
   margin-bottom: 10px !important;
 }
 
-.m-3 {
+.m-3, .episode-card .episode-card-container {
   margin: 15px !important;
 }
 
@@ -474,7 +474,7 @@ a {
   margin-right: 15px !important;
 }
 
-.my-3 {
+.my-3, .episode-card .card-text p {
   margin-top: 15px !important;
   margin-bottom: 15px !important;
 }
@@ -483,7 +483,7 @@ a {
   margin: 20px !important;
 }
 
-.mt-4 {
+.mt-4, .episode-card .card-text h3 {
   margin-top: 20px !important;
 }
 
@@ -504,7 +504,7 @@ a {
   margin-right: 20px !important;
 }
 
-.my-4, .section-header h2,
+.my-4, .listener-card-container .card-info .card-text, .section-header h2,
 .section-header-white h2, .section-header,
 .section-header-white {
   margin-top: 20px !important;
@@ -686,69 +686,57 @@ a {
   margin-right: 50px !important;
 }
 
-.my-10 {
+.my-10, .section-content {
   margin-top: 50px !important;
   margin-bottom: 50px !important;
 }
 
 .col-1 {
   width: calc(8.3333333333% * 1);
-  padding: 0 10px;
 }
 
 .col-2 {
   width: calc(8.3333333333% * 2);
-  padding: 0 10px;
 }
 
 .col-3 {
   width: calc(8.3333333333% * 3);
-  padding: 0 10px;
 }
 
 .col-4 {
   width: calc(8.3333333333% * 4);
-  padding: 0 10px;
 }
 
 .col-5 {
   width: calc(8.3333333333% * 5);
-  padding: 0 10px;
 }
 
 .col-6 {
   width: calc(8.3333333333% * 6);
-  padding: 0 10px;
 }
 
 .col-7 {
   width: calc(8.3333333333% * 7);
-  padding: 0 10px;
 }
 
 .col-8 {
   width: calc(8.3333333333% * 8);
-  padding: 0 10px;
 }
 
 .col-9 {
   width: calc(8.3333333333% * 9);
-  padding: 0 10px;
 }
 
 .col-10 {
   width: calc(8.3333333333% * 10);
-  padding: 0 10px;
 }
 
 .col-11 {
   width: calc(8.3333333333% * 11);
-  padding: 0 10px;
 }
 
 .col-12 {
   width: calc(8.3333333333% * 12);
-  padding: 0 10px;
 }
 
 .container {
@@ -762,15 +750,11 @@ a {
 .row {
   display: flex !important;
   flex-wrap: wrap;
-  margin-right: -15px;
-  margin-left: -15px;
 }
 
 .col {
   flex: 0 0 100%;
   max-width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
 }
 @media (min-width: 576px) {
   .col {
@@ -979,7 +963,7 @@ a {
   justify-content: start !important;
 }
 
-.flex-align-start, .section-title {
+.flex-align-start, .listener-card-container .card-image .listener-description, .section-title {
   align-items: start !important;
 }
 
@@ -991,15 +975,15 @@ a {
   align-items: end !important;
 }
 
-.flex-justify-center, .section-header-white {
+.flex-justify-center, .episode-card i, .section-header-white, .section-content .youtube-image .youtube-subscribe, .section-content .section-image {
   justify-content: center !important;
 }
 
-.flex-align-center, .home .banner .banner-waves, .section-header-white {
+.flex-align-center, .home .banner .banner-waves, .episode-card i, .episode-card .card-button a, .section-header-white, .section-content .youtube-image .youtube-subscribe, .section-content .section-text {
   align-items: center !important;
 }
 
-.flex-justify-space-between {
+.flex-justify-space-between, .listener-card-container .card-image .listener-description, .episode-card .episode-card-container .card-info {
   justify-content: space-between !important;
 }
 
@@ -1435,12 +1419,12 @@ a {
     margin-left: 41.6666666667%;
   }
 }
-.flex-container, .home .banner .banner-waves, .section-title, .section-header,
-.section-header-white {
+.flex-container, .home .banner .banner-waves, .listener-card-container .card-image .listener-description, .listener-card-container .card-image, .episode-card i, .episode-card .card-button a, .episode-card .episode-card-container .card-info, .episode-card .episode-card-container, .section-title, .section-header,
+.section-header-white, .section-content .youtube-image .youtube-subscribe, .section-content .section-image, .section-content .section-text {
   display: flex;
 }
 
-.flex-column, .section-title, .section-header,
+.flex-column, .listener-card-container .card-image .listener-description, .episode-card .episode-card-container .card-info, .episode-card .episode-card-container, .section-title, .section-header,
 .section-header-white {
   flex-direction: column;
 }
@@ -1482,27 +1466,27 @@ a {
 }
 
 .bg-info {
-  background-color: #5f36bb !important;
+  background-color: #832BC1 !important;
 }
 
 .text-info {
-  color: #5f36bb !important;
+  color: #832BC1 !important;
 }
 
 .border-info {
-  border-color: #5f36bb !important;
+  border-color: #832BC1 !important;
 }
 
-.bg-warning {
-  background-color: #f0ad4e !important;
+.bg-good {
+  background-color: #ABFFE0 !important;
 }
 
-.text-warning {
-  color: #f0ad4e !important;
+.text-good {
+  color: #ABFFE0 !important;
 }
 
-.border-warning {
-  border-color: #f0ad4e !important;
+.border-good {
+  border-color: #ABFFE0 !important;
 }
 
 .bg-danger {
@@ -1601,7 +1585,7 @@ a {
   font-size: 15px !important;
 }
 
-.font-size-16, .podcast .podcast-text p, .home .banner .banner-text p, .form-control, .btn, .footer .footer-widgets .widget .footer-menu li, .header .header-main-menu .mobile-nav li span, .header .header-main-menu .header-nav-link span {
+.font-size-16, .home .banner .banner-text p, .form-control, .btn, .section-content .section-text p, .footer .footer-widgets .widget .footer-menu li, .header .header-main-menu .mobile-nav li span, .header .header-main-menu .header-nav-link span {
   font-size: 16px !important;
 }
 
@@ -1633,7 +1617,7 @@ a {
   font-size: 23px !important;
 }
 
-.font-size-24 {
+.font-size-24, .episode-card .card-text h3 {
   font-size: 24px !important;
 }
 
@@ -1649,7 +1633,7 @@ a {
   font-size: 27px !important;
 }
 
-.font-size-28 {
+.font-size-28, .section-content .youtube-image .youtube-subscribe {
   font-size: 28px !important;
 }
 
@@ -1666,7 +1650,7 @@ a {
 }
 
 .font-size-32, .section-header h2,
-.section-header-white h2 {
+.section-header-white h2, .section-content .youtube-image .youtube-subscribe i {
   font-size: 32px !important;
 }
 
@@ -1970,15 +1954,15 @@ a {
   font-weight: 300 !important;
 }
 
-.font-weight-400, .podcast .podcast-text p, .home .banner .banner-text p, .footer .footer-widgets .widget .footer-menu li, .header .header-main-menu .header-nav-link span {
+.font-weight-400, .home .banner .banner-text p, .section-content .section-text p, .footer .footer-widgets .widget .footer-menu li, .header .header-main-menu .header-nav-link span {
   font-weight: 400 !important;
 }
 
-.font-weight-500, .btn, .header .header-main-menu .mobile-nav li span {
+.font-weight-500, .listener-card-container .card-image .listener-description p, .btn, .header .header-main-menu .mobile-nav li span {
   font-weight: 500 !important;
 }
 
-.font-weight-600, .footer .footer-copyright .copyright a {
+.font-weight-600, .episode-card .card-text h3, .footer .footer-copyright .copyright a {
   font-weight: 600 !important;
 }
 
@@ -2031,7 +2015,6 @@ a {
   }
 }
 @media screen and (max-width: 992px) {
-  .testimonial-clients-track,
   .client-slider-track {
     grid-auto-columns: 33.3333333333% !important;
   }
@@ -2043,6 +2026,18 @@ a {
   .banner-waves {
     max-width: 100% !important;
     text-align: center;
+  }
+  .banner-waves {
+    margin: 50px 0;
+  }
+  .section-text {
+    text-align: center;
+  }
+  .podcast-bg {
+    background: linear-gradient(to bottom, #fff 0%, #fff 50%, #503AE7 50%, #503AE7 100%) !important;
+  }
+  .youtube-subscribe {
+    right: 20px !important;
   }
   .stiky-arrow-up {
     left: 88% !important;
@@ -2232,6 +2227,77 @@ a {
   width: auto;
 }
 
+.section-content .section-text {
+  max-width: 90%;
+}
+.section-content .section-text p {
+  max-width: 100%;
+  color: #14142B;
+  margin-bottom: 30px;
+  line-height: 1.75rem;
+}
+.section-content .podcast-bg {
+  background: linear-gradient(to right, #fff 0%, #fff 50%, #503AE7 50%, #503AE7 100%);
+}
+.section-content .podcast-image {
+  max-width: 100%;
+  position: relative;
+}
+.section-content .podcast-image img {
+  width: 380px;
+  height: 380px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.section-content .podcast-image::before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  bottom: 15%;
+  left: 0;
+  border-radius: 50%;
+  background: url("../images/pexels-anna-tarazevich-7229039.jpg") center/cover no-repeat;
+  z-index: 56;
+}
+.section-content .youtube-image {
+  height: 512px;
+  width: 100%;
+  position: relative;
+  background-image: url("../images/man-on-chair-6878173.png");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: contain;
+  z-index: 1;
+}
+.section-content .youtube-image .youtube-subscribe {
+  width: 260px;
+  height: 80px;
+  background-color: #503AE7;
+  color: #fff;
+  position: absolute;
+  bottom: 60px;
+  right: -20px;
+}
+.section-content .youtube-image .youtube-subscribe i {
+  color: #1AD993;
+}
+
+.stiky-arrow-up {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  background: #292b2c;
+  color: #fff;
+  bottom: 20px;
+  left: 95%;
+  border-radius: 50%;
+}
+
 .btn {
   background-color: #503AE7;
   color: #F4F2FF;
@@ -2244,7 +2310,7 @@ a {
 .btn:hover,
 .btn :focus,
 .btn :active {
-  background-color: #5f36bb;
+  background-color: #832BC1;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
 }
 
@@ -2347,6 +2413,18 @@ a {
   scroll-snap-type: none;
 }
 
+.swiper {
+  width: 100%;
+  margin: 20px auto;
+}
+
+.swiper-slide {
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .section-header,
 .section-header-white {
   width: 100%;
@@ -2355,6 +2433,15 @@ a {
 .section-header h2,
 .section-header-white h2 {
   line-height: 1.2;
+}
+.section-header a,
+.section-header-white a {
+  color: #503AE7;
+  transition: all 0.3s ease;
+}
+.section-header a:hover,
+.section-header-white a:hover {
+  color: #832BC1;
 }
 
 .section-header-white {
@@ -2375,6 +2462,58 @@ a {
   font-size: 18px;
   line-height: 1.75;
   color: #999;
+}
+
+.episode-card .episode-card-container {
+  min-height: 100%;
+  border-bottom: 8px solid #503AE7;
+  border-radius: 0 0 6px 6px;
+}
+.episode-card .episode-card-container .card-image {
+  position: relative;
+}
+.episode-card .episode-card-container .card-image img {
+  width: 100%;
+  height: 300px;
+  object-fit: contain;
+}
+.episode-card .episode-card-container .card-image .card-icon {
+  position: absolute;
+  top: 20px;
+  right: 10px;
+}
+.episode-card .episode-card-container .card-info {
+  flex-grow: 1;
+}
+.episode-card .card-text h3 {
+  line-height: 1.25;
+}
+.episode-card .card-text p {
+  line-height: 1.5;
+}
+.episode-card i {
+  width: 35px;
+  height: 35px;
+  background-color: #503AE7;
+  color: #fff;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+.episode-card i:hover {
+  background-color: #832BC1;
+}
+
+.listener-card-container .card-image img {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.listener-card-container .card-image .listener-description .star-icons {
+  color: #FF7602;
+}
+.listener-card-container .card-info .card-text {
+  line-height: 1.5;
 }
 
 .home {
@@ -2410,38 +2549,4 @@ a {
 }
 .home .banner .banner-waves .wave-secondary {
   background-color: #1AD993;
-}
-
-.podcast .podcast-text {
-  max-width: 90%;
-}
-.podcast .podcast-text p {
-  max-width: 100%;
-  color: #14142B;
-  margin-bottom: 30px;
-  line-height: 1.75rem;
-}
-.podcast .podcast-image {
-  background-color: #503AE7;
-  max-width: 100%;
-}
-.podcast .podcast-image img {
-  position: relative;
-  width: 380px;
-  height: 380px;
-  border-radius: 50%;
-}
-
-.stiky-arrow-up {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: fixed;
-  width: 50px;
-  height: 50px;
-  background: #292b2c;
-  color: #fff;
-  bottom: 20px;
-  left: 95%;
-  border-radius: 50%;
 }/*# sourceMappingURL=style.css.map */

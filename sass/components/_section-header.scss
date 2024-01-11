@@ -13,6 +13,13 @@
     @extend .my-4;
     line-height: 1.2;
   }
+  a{
+    color: map-get($colors, primary);
+    transition: all 0.3s ease;
+    &:hover{
+      color: map-get($colors, info)
+    }
+  }
 }
 
 // styled header for dark section

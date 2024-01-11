@@ -4,9 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+  />
     <title>Finsweet | Home</title>
 </head>
 <body>
+    <!-- Header Start -->
     <header class="header">
         <div class="header-main-menu">
           <div class="container">
@@ -55,7 +60,10 @@
           </div>
         </div>
     </header>
+    <!-- Header End -->
+    <!-- Main Page Styles -->
     <main class="main" id="home">
+        <!-- Main block start -->
         <section class="home">
             <div class="banner">
                 <div class="container">
@@ -84,6 +92,9 @@
                 </div>
             </div>
         </section>
+        <!-- Main block end -->
+
+        <!-- Brand start -->
         <section class="brands">
             <div class="brands-slider" >
                 <div class="container">
@@ -104,28 +115,136 @@
                   </div>
             </div>
         </section>
-        <section class="podcast">
-            <!-- <div class="container"> -->
-                <div class="row" style="margin-right: 0;margin-left: 0;">
-                    <div class="col-12 col-lg-6 flex-container flex-justify-end">
-                        <div class="podcast-text ">
-                            <div class="section-header">
-                                <h2>A podcast for makers and entrepreneurs</h2>
-                                <p>Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased to twinkle. </p>
+        <!-- Brand end -->
+
+        <!-- Podcast block start -->
+        <section class="section-content podcast">
+            <div class="podcast-bg">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-lg-6 flex-container flex-justify-end">
+                                <div class="section-text ">
+                                    <div class="section-header">
+                                        <h2>A podcast for makers and entrepreneurs</h2>
+                                        <p>Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased to twinkle. </p>
+                                    </div>
+                                </div>
+                        </div>
+                        <div class="col-12 col-lg-6 flex-container flex-justify-center">
+                            <div class="section-image">
+                                <div class="podcast-image">
+                                    <img src="images/pexels-cottonbro-studio-6892891.jpg" alt="studio">
+                                </div>
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+        </section>
+        <!-- Podcast block end -->
+
+        <!-- Youtube block start -->
+        <section class="section-content youtube">
+            <div class="youtube-bg">
+                <div class="row">
                     <div class="col-12 col-lg-6">
-                        <div class="podcast-image">
-                            <img src="images/pexels-cottonbro-studio-6892891.jpg" alt="studio">
+                            <div class="section-image">
+                                <div class="youtube-image">
+                                    <div class="youtube-subscribe">
+                                        <i class="fa-brands fa-youtube"></i>
+                                        <p>350+ Videos</p>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="col-12 col-lg-6 flex-container flex-justify-center">
+                            <div class="container flex-container flex-align-center">
+                                <div class="section-text ">
+                                    <div class="section-header">
+                                        <h2>My origins on <a href="https://www.youtube.com/">YouTube</a> in 2008</h2>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mus cras lacus tellus morbi viverra suspendisse ornare. Sit volutpat, volutpat ut netus malesuada enim penatibus non aliquet. </p>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Youtube block end -->
+
+        <!-- Resent Episodes start -->
+        <section class="episode-card">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-4">
+                        <div class="section-header">
+                            <h2>Recent Episodes</h2>
+                            <p>Apparently we had reached a great height in the atmosphere, for the sky was a dead black. </p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-8 flex-container flex-justify-end flex-align-end">
+                        <input type="submit" value="See all episodes" class="btn">
+                    </div>
+                </div>
+            </div>
+            <div class="container my-8">
+                <div class="row episodes">
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="episode-card-container">
+                            <div class="card-image">
+                                <img src="images/blog/single-man.png" alt="">
+                                <div class="card-icon">
+                                    <i class="fa-solid fa-microphone"></i>
+                                </div>
+                            </div>
+                            <div class="card-info">
+                                <div class="card-text">
+                                    <h3>Ep 1: How to build a world-class business brand</h3>
+                                    <p>Lorem ipsum at vero eos et accusam et justo duo dolores et ea rebum.</p>
+                                </div>
+                                <div class="card-button">
+                                    <a href="#"><i class="fa-solid fa-play"></i> <span>Listen Now</span></a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-            <!-- </div> -->
+            </div>
         </section>
-        
+        <!-- Resent Episodes end -->
+
+        <!-- Listeners start -->
+        <section class="listener-card">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-6">
+                        <div class="section-header">
+                            <h2>What our listeners say</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6 flex-container flex-justify-end flex-align-end">
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="container my-8">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper listener-user">
+                      
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+        <!-- Listeners end -->
 
     </main>
+    <!-- Main Page Styles -->
+
+    <!-- Footer start -->
     <footer class="footer">
         <div class="container">
             <section class="sponsors">
@@ -210,12 +329,19 @@
           </div>
         </div>
     </footer>
+    <!-- Footer end -->
+
 
     <a href="#home" class="stiky-arrow-up">
         <i class="fa-solid fa-chevron-up"></i>
     </a>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script type="module" src="js/app.js"></script>
+
+
+
     <script src="https://kit.fontawesome.com/3bce90d2ae.js" crossorigin="anonymous"></script>
+    
 </body>
 </html>

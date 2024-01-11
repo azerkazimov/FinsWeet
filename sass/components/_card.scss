@@ -1,0 +1,114 @@
+.episode-card {
+    .episode-card-container {
+        @extend .m-3;
+        @extend .py-5;
+        @extend .flex-container;
+        @extend .flex-column;
+        min-height: 100%;
+        border-bottom: 8px solid map-get($colors, primary);
+        border-radius: 0 0 6px 6px;
+
+        .card-image {
+            position: relative;
+
+            img {
+                width: 100%;
+                height: 300px;
+                object-fit: contain;
+            }
+
+            .card-icon {
+                position: absolute;
+                top: 20px;
+                right: 10px;
+            }
+        }
+
+        .card-info {
+            @extend .flex-container;
+            @extend .flex-column;
+            @extend .flex-justify-space-between;
+            flex-grow: 1;
+
+        }
+    }
+
+
+
+    .card-text {
+        h3 {
+            @extend .font-size-24;
+            @extend .font-weight-600;
+            @extend .mt-4;
+            line-height: 1.25;
+        }
+
+        p {
+            @extend .my-3;
+            line-height: 1.5;
+        }
+    }
+
+    .card-button {
+        a {
+            @extend .flex-container;
+            @extend .flex-align-center;
+        }
+
+    }
+
+    i {
+        @extend .flex-container;
+        @extend .flex-justify-center;
+        @extend .flex-align-center;
+        @extend .mr-2;
+
+        width: 35px;
+        height: 35px;
+        background-color: map-get($colors, primary);
+        color: map-get($colors, natural);
+        border-radius: 50%;
+        transition: all 0.3s ease;
+
+        &:hover {
+            background-color: map-get($colors, info);
+        }
+    }
+}
+
+.listener-card-container {
+
+    .card-image {
+        @extend .flex-container;
+
+        img{
+            height: 80px;
+            width: 80px;
+            border-radius: 50%;
+            object-fit: cover; 
+        }
+        .listener-description {
+            @extend .flex-container;
+            @extend .flex-column;
+            @extend .flex-justify-space-between;
+            @extend .flex-align-start;
+            @extend .p-3;;
+            p {
+                @extend .font-weight-500;
+            }
+
+            .star-icons {
+                @extend .mr-2;
+                color: map-get($colors, success);
+            }
+        }
+
+    }
+
+    .card-info {
+        .card-text {
+            @extend .my-4;
+            line-height: 1.5;
+        }
+    }
+} 

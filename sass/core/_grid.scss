@@ -2,7 +2,6 @@
 @for $i from 1 through $grid-columns {
   .col-#{$i} {
     width: calc((100% / 12) * #{$i});
-    padding: 0 10px;
   }
 }
 
@@ -18,15 +17,11 @@
 .row {
   display: flex !important;
   flex-wrap: wrap;
-  margin-right: -15px;
-  margin-left: -15px;
 }
 
 .col {
   flex: 0 0 100%;
   max-width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
 
   @media (min-width: 576px) {
     flex: 0 0 50%; // Two columns in a row

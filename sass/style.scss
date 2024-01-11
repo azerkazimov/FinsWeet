@@ -13,13 +13,17 @@
 @import "blocks/header";
 @import "blocks/footer";
 @import "blocks/sponsor";
+@import "blocks/section-content";
 
 // import components
+@import "components/arrow-up";
 @import "components/buttons";
 @import "components/inputs";
 @import "components/bounce";
 @import "components/slider";
+@import "components/swiper";
 @import "components/section-header";
+@import "components/card";
 
 // import pages
 @import "pages/main";

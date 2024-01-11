@@ -43,7 +43,6 @@
 }
 
 @media screen and (max-width: 992px) {
-  .testimonial-clients-track,
   .client-slider-track {
     grid-auto-columns: calc((100% / 3)) !important;
   }
@@ -57,6 +56,26 @@
   .banner-waves {
     max-width: 100% !important;
     text-align: center;
+  }
+
+  .banner-waves{
+    margin: 50px 0;
+  }
+
+  .section-text{
+    text-align: center;
+  }
+  .podcast-bg {
+    background: linear-gradient(to bottom,
+        map-get($colors, natural) 0%,
+        map-get($colors, natural) 50%,
+        map-get($colors, primary) 50%,
+        map-get($colors, primary) 100%,
+      ) !important;
+  }
+
+  .youtube-subscribe{
+    right: 20px !important;
   }
 
   .stiky-arrow-up {
