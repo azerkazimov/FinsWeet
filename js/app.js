@@ -1,10 +1,18 @@
-// Swiper
-import Swiper from "https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs";
+import jsonServer from 'https://cdn.jsdelivr.net/npm/json-server@1.0.0-alpha.19/+esm'
 
-import { initializeSwiper } from "./swiper.js";
+
+// Fetch Users
+const listener = document.querySelector(".listener-user");
+
+import { fetchUser } from "./api-store.js";
 document.addEventListener("DOMContentLoaded", function () {
-  initializeSwiper();
-});
+    fetchUser(listener);
+  });
+
+// Swiper
+import { initializeSwiper } from "./swiper.js";
+initializeSwiper();
+
 
 // Burger menu
 import { initializeBurgerMenu } from "./header.js";
@@ -28,10 +36,3 @@ const elem = document.querySelector(".episodes");
 
 fetchData(elem);
 
-// Fetch Users
-
-import { fetchUser } from "./api-store.js";
-document.addEventListener("DOMContentLoaded", function () {
-    const listener = document.querySelector(".listener-user");
-    fetchUser(listener);
-  });
