@@ -1,12 +1,12 @@
 // Get data from Fake Store API and paste it into card element
 export function fetchData(element) {
-  return fetch("https://fakestoreapi.com/products")
+  return fetch("https://fakestoreapi.com/products?limit=7")
     .then((data) => data.json())
     .then((complatedata) => {
       complatedata.forEach((elem) => {
         element.innerHTML += `
           <div class="col-12 col-md-6 col-lg-4">
-            <div class="episode-card-container">
+            <div class="common-card-container">
               <div class="card-image">
                   <img src=${elem.image} alt="">
                   <div class="card-icon">
@@ -43,3 +43,36 @@ export function fetchUser() {
     })
     .catch((error) => console.error("Error fetching data:", error));
 }
+
+function generatePost(data) {
+  data.forEach((elem) => {
+    document.querySelector(".articles").innerHTML += `
+    <div class="col-12 col-md-6 col-lg-4">
+      <div class="common-card-container">
+        <div class="card-image">
+            <img src=${elem.image} alt="">
+        </div>
+        <div class="card-info">
+            <div class="card-text">
+                <h3>${elem.name}</h3>
+                <p>${elem.description}</p>
+            </div>
+            <div class="card-button">
+                <a href="#"><span>Read More</span></a>
+            </div>
+        </div>
+      </div>
+    </div>
+    `;
+  });
+}
+
+export function fetchPost() {
+  fetch("https://freetestapi.com/api/v1/currencies?sort=name&order=dec&limit=4")
+    .then((response) => response.json()) // Fix: added parentheses after json
+    .then((data) => {
+      generatePost(data);
+    })
+    .catch((err) => console.error("Error fetching data:", err));
+}
+

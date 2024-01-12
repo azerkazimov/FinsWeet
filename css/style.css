@@ -204,7 +204,7 @@ a {
   padding-right: 25px !important;
 }
 
-.py-5, .brands, .episode-card .episode-card-container {
+.py-5, .brands, .common-card-container {
   padding-top: 25px !important;
   padding-bottom: 25px !important;
 }
@@ -431,7 +431,7 @@ a {
   margin-bottom: 10px !important;
 }
 
-.mr-2, .listener-card-container .card-image .listener-description .star-icons, .episode-card i {
+.mr-2, .listener-card-container .card-image .listener-description .star-icons, .common-card-container i {
   margin-right: 10px !important;
 }
 
@@ -449,7 +449,7 @@ a {
   margin-bottom: 10px !important;
 }
 
-.m-3, .episode-card .episode-card-container {
+.m-3, .common-card-container {
   margin: 15px !important;
 }
 
@@ -474,7 +474,7 @@ a {
   margin-right: 15px !important;
 }
 
-.my-3, .episode-card .card-text p {
+.my-3, .common-card-container .card-text p {
   margin-top: 15px !important;
   margin-bottom: 15px !important;
 }
@@ -483,7 +483,7 @@ a {
   margin: 20px !important;
 }
 
-.mt-4, .episode-card .card-text h3 {
+.mt-4, .common-card-container .card-text h3 {
   margin-top: 20px !important;
 }
 
@@ -963,7 +963,7 @@ a {
   justify-content: start !important;
 }
 
-.flex-align-start, .listener-card-container .card-image .listener-description, .section-title {
+.flex-align-start, .articles-card .read-news .transform-shapes, .listener-card-container .card-image .listener-description, .section-title {
   align-items: start !important;
 }
 
@@ -975,15 +975,15 @@ a {
   align-items: end !important;
 }
 
-.flex-justify-center, .episode-card i, .section-header-white, .section-content .youtube-image .youtube-subscribe, .section-content .section-image {
+.flex-justify-center, .common-card-container i, .section-header-white, .section-content .youtube-image .youtube-subscribe, .section-content .section-image {
   justify-content: center !important;
 }
 
-.flex-align-center, .home .banner .banner-waves, .episode-card i, .episode-card .card-button a, .section-header-white, .section-content .youtube-image .youtube-subscribe, .section-content .section-text {
+.flex-align-center, .home .banner .banner-waves, .common-card-container i, .common-card-container .card-button a, .section-header-white, .section-content .youtube-image .youtube-subscribe, .section-content .section-text {
   align-items: center !important;
 }
 
-.flex-justify-space-between, .listener-card-container .card-image .listener-description, .episode-card .episode-card-container .card-info {
+.flex-justify-space-between, .articles-card .read-news .transform-shapes, .listener-card-container .card-image .listener-description, .common-card-container .card-info {
   justify-content: space-between !important;
 }
 
@@ -1419,12 +1419,12 @@ a {
     margin-left: 41.6666666667%;
   }
 }
-.flex-container, .home .banner .banner-waves, .listener-card-container .card-image .listener-description, .listener-card-container .card-image, .episode-card i, .episode-card .card-button a, .episode-card .episode-card-container .card-info, .episode-card .episode-card-container, .section-title, .section-header,
+.flex-container, .home .banner .banner-waves, .articles-card .read-news .transform-shapes, .listener-card-container .card-image .listener-description, .listener-card-container .card-image, .common-card-container i, .common-card-container .card-button a, .common-card-container .card-info, .common-card-container, .section-title, .section-header,
 .section-header-white, .section-content .youtube-image .youtube-subscribe, .section-content .section-image, .section-content .section-text {
   display: flex;
 }
 
-.flex-column, .listener-card-container .card-image .listener-description, .episode-card .episode-card-container .card-info, .episode-card .episode-card-container, .section-title, .section-header,
+.flex-column, .listener-card-container .card-image .listener-description, .common-card-container .card-info, .common-card-container, .section-title, .section-header,
 .section-header-white {
   flex-direction: column;
 }
@@ -1617,7 +1617,7 @@ a {
   font-size: 23px !important;
 }
 
-.font-size-24, .episode-card .card-text h3 {
+.font-size-24, .common-card-container .card-text h3 {
   font-size: 24px !important;
 }
 
@@ -1962,11 +1962,12 @@ a {
   font-weight: 500 !important;
 }
 
-.font-weight-600, .episode-card .card-text h3, .footer .footer-copyright .copyright a {
+.font-weight-600, .common-card-container .card-text h3, .footer .footer-copyright .copyright a {
   font-weight: 600 !important;
 }
 
-.font-weight-700, .home .banner .banner-text h1, .footer .footer-widgets .widget h6 {
+.font-weight-700, .home .banner .banner-text h1, .common-card-container .card-button a, .section-header a,
+.section-header-white a, .footer .footer-widgets .widget h6 {
   font-weight: 700 !important;
 }
 
@@ -2306,6 +2307,7 @@ a {
   border: 0;
   transition: all 0.3s;
   cursor: pointer;
+  z-index: 5;
 }
 .btn:hover,
 .btn :focus,
@@ -2332,9 +2334,16 @@ a {
   color: #1AD993;
   border: 1px solid transparent;
   flex-grow: 1;
+  z-index: 5;
 }
 .form-control:focus {
   border-color: #503AE7;
+  outline: 0;
+  box-shadow: 0 0 0 0 2rem rgba(0, 123, 255, 0.25);
+}
+
+.form-secondary:focus {
+  border-color: #1AD993 !important;
   outline: 0;
   box-shadow: 0 0 0 0 2rem rgba(0, 123, 255, 0.25);
 }
@@ -2474,34 +2483,40 @@ a {
   color: #999;
 }
 
-.episode-card .episode-card-container {
+.common-card-container {
   min-height: 100%;
-  border-bottom: 8px solid #503AE7;
   border-radius: 0 0 6px 6px;
 }
-.episode-card .episode-card-container .card-image {
+.common-card-container .card-image {
   position: relative;
 }
-.episode-card .episode-card-container .card-image img {
+.common-card-container .card-image img {
   width: 100%;
   height: 300px;
   object-fit: contain;
 }
-.episode-card .episode-card-container .card-image .card-icon {
+.common-card-container .card-image .card-icon {
   position: absolute;
   top: 20px;
   right: 10px;
 }
-.episode-card .episode-card-container .card-info {
+.common-card-container .card-info {
   flex-grow: 1;
 }
-.episode-card .card-text h3 {
+.common-card-container .card-text h3 {
   line-height: 1.25;
 }
-.episode-card .card-text p {
+.common-card-container .card-text p {
   line-height: 1.5;
 }
-.episode-card i {
+.common-card-container .card-button a {
+  color: #503AE7;
+  transition: all 0.3s ease;
+}
+.common-card-container .card-button a:hover {
+  color: #832BC1;
+}
+.common-card-container i {
   width: 35px;
   height: 35px;
   background-color: #503AE7;
@@ -2509,7 +2524,7 @@ a {
   border-radius: 50%;
   transition: all 0.3s ease;
 }
-.episode-card i:hover {
+.common-card-container i:hover {
   background-color: #832BC1;
 }
 
@@ -2524,6 +2539,67 @@ a {
 }
 .listener-card-container .card-info .card-text {
   line-height: 1.5;
+}
+
+.articles-card .read-news {
+  overflow: hidden;
+  height: 600px;
+  background-color: #F4F2FF;
+}
+.articles-card .read-news .transform-shapes {
+  position: relative;
+  top: -15%;
+  transform: rotate(-135deg);
+  min-height: 100%;
+  width: 100%;
+}
+.articles-card .read-news .transform-shapes .shape {
+  width: 75px;
+  height: 460px;
+  background-color: #503AE7;
+}
+.articles-card .read-news .transform-shapes .shape-two {
+  height: 615px;
+  background-color: #1AD993;
+}
+.articles-card .read-news .transform-shapes .shape-three {
+  height: 370px;
+}
+
+.form-wave {
+  padding: 50px 0;
+}
+.form-wave .waves {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0px;
+  margin: auto;
+  overflow: hidden;
+  height: 150px;
+  width: 100%;
+}
+.form-wave .waves .wave {
+  left: 0;
+  width: 200%;
+  height: 100%;
+  background-repeat: repeat no-repeat;
+  background-position: 0 bottom;
+  transform-origin: center bottom;
+  opacity: 0.3;
+  background-image: url("../images/vector/Vector.png");
+  animation: waves 20s infinite linear;
+}
+@keyframes waves {
+  0% {
+    transform: translateX(0) translateZ(0);
+  }
+  50% {
+    transform: translateX(-25%) translateZ(0);
+  }
+  100% {
+    transform: translateX(-50%) translateZ(0);
+  }
 }
 
 .home {

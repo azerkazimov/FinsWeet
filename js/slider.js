@@ -1,4 +1,5 @@
 export function initializeSlider(element) {
+  if (!element) return;
   let brandWidth = element.querySelector(".client-slider-pic").offsetWidth;
   let brandChildren = [...element.children];
 

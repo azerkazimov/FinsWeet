@@ -23,3 +23,8 @@ import { fetchData } from "./api-store.js";
 const elem = document.querySelector(".episodes");
 
 fetchData(elem);
+
+// Fetch Post
+
+import { fetchPost } from "./api-store.js";
+fetchPost();
