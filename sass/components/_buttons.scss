@@ -18,3 +18,13 @@
   }
 }
 
+.btn-secondary {
+  background-color: map-get($colors, secondary) !important;
+  transition: all 0.3s;
+
+  &:hover,
+  :focus,
+  :active {
+    background-color: map-get($colors, dark) !important;
+  }
+}

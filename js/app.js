@@ -1,18 +1,6 @@
-import jsonServer from 'https://cdn.jsdelivr.net/npm/json-server@1.0.0-alpha.19/+esm'
-
-
-// Fetch Users
-const listener = document.querySelector(".listener-user");
-
-import { fetchUser } from "./api-store.js";
-document.addEventListener("DOMContentLoaded", function () {
-    fetchUser(listener);
-  });
-
 // Swiper
-import { initializeSwiper } from "./swiper.js";
-initializeSwiper();
-
+import { fetchUser } from "./api-store.js";
+fetchUser();
 
 // Burger menu
 import { initializeBurgerMenu } from "./header.js";
@@ -35,4 +23,3 @@ import { fetchData } from "./api-store.js";
 const elem = document.querySelector(".episodes");
 
 fetchData(elem);
-

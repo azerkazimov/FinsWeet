@@ -33,36 +33,13 @@ export function fetchData(element) {
     });
 }
 
-export function fetchUser(element) {
-  return fetch("https://jsonplaceholder.typicode.com/users")
-    .then((data) => data.json())
-    .then((complatedata) => {
-      complatedata.forEach((elem) => {
-        element.innerHTML += `
-        <div class="swiper-slide">
-        <div class="listener-card-container">
-            <div class="card-image">
-                <img src="images/listeners/pexels-ike-louie-natividad-3310695.jpg" alt="">
-                <div class="listener-description">
-                    <p>${elem.name}</p>
-                    <div class="star-icons">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                    </div>
-                </div>
-            </div>
-            <div class="card-info">
-                <div class="card-text">
-                    <p>${elem.company.catchPhrase}</p>
-                </div>
-            </div>
-        </div>
-      </div>
-        `;
-      });
+import { swiperFunc } from "./swiper.js";
+
+export function fetchUser() {
+  fetch("https://freetestapi.com/api/v1/users?limit=12")
+    .then((response) => response.json())
+    .then((data) => {
+      swiperFunc(data);
     })
-    .catch((err) => console.log(err));
+    .catch((error) => console.error("Error fetching data:", error));
 }
