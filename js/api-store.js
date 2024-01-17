@@ -1,36 +1,10 @@
 // Get data from Fake Store API and paste it into card element
+import { generateCard, generatePost } from "./showCard.js";
 export function fetchData(element) {
-  return fetch("https://fakestoreapi.com/products?limit=7")
+  return fetch("https://fakestoreapi.com/products?limit=14")
     .then((data) => data.json())
-    .then((complatedata) => {
-      complatedata.forEach((elem) => {
-        element.innerHTML += `
-          <div class="col-12 col-md-6 col-lg-4">
-            <div class="common-card-container">
-              <div class="card-image">
-                  <img src=${elem.image} alt="">
-                  <div class="card-icon">
-                      <i class="fa-solid fa-microphone"></i>
-                  </div>
-              </div>
-              <div class="card-info">
-                <div class="card-text">
-                    <h3>${elem.title}</h3>
-                    <p>${elem.description}</p>
-                </div>
-                <div class="card-button">
-                    <a href="#"><i class="fa-solid fa-play"></i> <span>Listen Now</span></a>
-                </div>
-              </div>
-            </div>
-          </div>
-        `;
-      });
-    })
-    .catch((err) => {
-      console.log(err);
-      return "";
-    });
+    .then((complatedata) => generateCard(complatedata, element))
+    .catch((error) => console.error("Error fetching data:", error));
 }
 
 import { swiperFunc } from "./swiper.js";
@@ -41,30 +15,7 @@ export function fetchUser() {
     .then((data) => {
       swiperFunc(data);
     })
-    .catch((error) => console.error("Error fetching data:", error));
-}
-
-function generatePost(data) {
-  data.forEach((elem) => {
-    document.querySelector(".articles").innerHTML += `
-    <div class="col-12 col-md-6 col-lg-4">
-      <div class="common-card-container">
-        <div class="card-image">
-            <img src=${elem.image} alt="">
-        </div>
-        <div class="card-info">
-            <div class="card-text">
-                <h3>${elem.name}</h3>
-                <p>${elem.description}</p>
-            </div>
-            <div class="card-button">
-                <a href="#"><span>Read More</span></a>
-            </div>
-        </div>
-      </div>
-    </div>
-    `;
-  });
+    .catch((error) => console.error("Error fetching data: ", error));
 }
 
 export function fetchPost() {
@@ -73,6 +24,5 @@ export function fetchPost() {
     .then((data) => {
       generatePost(data);
     })
-    .catch((err) => console.error("Error fetching data:", err));
+    .catch((error) => console.error("Error fetching data:", error));
 }
-

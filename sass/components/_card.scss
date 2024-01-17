@@ -44,22 +44,6 @@
         }
     }
 
-    .card-button {
-        a {
-            @extend .flex-container;
-            @extend .flex-align-center;
-            @extend .font-weight-700;
-            color: map-get($colors, primary);
-            transition: all 0.3s ease;
-
-            &:hover {
-                color: map-get($colors, info)
-            }
-
-        }
-
-    }
-
     i {
         @extend .flex-container;
         @extend .flex-justify-center;

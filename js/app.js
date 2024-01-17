@@ -20,11 +20,36 @@ initializeSlider(sponsors);
 
 // Fetch Episodes
 import { fetchData } from "./api-store.js";
-const elem = document.querySelector(".episodes");
+const episode = document.querySelector(".episodes");
+const podcast = document.querySelector(".podcast-cards");
 
-fetchData(elem);
+fetchData(episode);
+fetchData(podcast);
 
 // Fetch Post
 
 import { fetchPost } from "./api-store.js";
 fetchPost();
+
+document.addEventListener("DOMContentLoaded", function () {
+  const currentPage = window.location.href;
+  document.querySelectorAll(".header-nav-link").forEach((link) => {
+    const linkUrl = new URL(link.href).pathname;
+    if (currentPage === linkUrl) {
+      link.classList.add("active-link");
+    }
+  });
+});
+
+
+import { setupFilterButtons } from "./filter.js";
+setupFilterButtons()
+
+
+// const filterBtn = document.querySelectorAll(".btn-filter");
+
+// import { filterDatas } from "./filter.js";
+
+// filterDatas(filterBtn);
+
+

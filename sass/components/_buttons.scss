@@ -29,3 +29,75 @@
     background-color: map-get($colors, dark) !important;
   }
 }
+
+.btn-play {
+  a {
+    @extend .flex-container;
+    @extend .flex-align-center;
+    @extend .font-weight-700;
+    color: map-get($colors, primary);
+    transition: all 0.3s ease;
+
+    &:hover {
+      color: map-get($colors, info) !important;
+    }
+
+  }
+
+  i {
+    @extend .flex-container;
+    @extend .flex-justify-center;
+    @extend .flex-align-center;
+    @extend .mr-2;
+
+    width: 35px;
+    height: 35px;
+    background-color: map-get($colors, primary);
+    color: map-get($colors, natural);
+    border-radius: 50%;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background-color: map-get($colors, info);
+    }
+  }
+}
+
+.btn-play-secondary {
+  i {
+    background-color: map-get($colors, secondary) !important;
+
+    &:hover {
+      background-color: map-get($colors, info) !important;
+    }
+  }
+}
+
+.filter-btn-store {
+  @extend .flex-container;
+  flex-wrap: wrap;
+  gap: 10px;
+
+  .btn-filter {
+    border-radius: 28px;
+    background-color: transparent;
+    border: 1px solid map-get($colors, light);
+    color: map-get($colors, silvery);
+  }
+
+  .active {
+    background-color: map-get($colors, primary);
+    color: map-get($colors, natural);
+  }
+}
+
+.btn-trans {
+  border: 2px solid map-get($colors, natural);
+  color: map-get($colors, natural);
+  background-color: transparent;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: rgba(223, 223, 223, 0.5);
+  }
+}

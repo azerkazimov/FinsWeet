@@ -19,7 +19,7 @@
               </div>
               <div class="col-md-10 col-sm-10 col-xs-10">
                 <ul class="header-nav-menu flex-container flex-justify-end flex-align-center">
-                  <li class="header-nav-item"><a href="index.html" class="header-nav-link"><span>Home</span></a></li>
+                  <li class="header-nav-item"><a href="index.html" class="header-nav-link "><span>Home</span></a></li>
                   <li class="header-nav-item"><a href="podcasts.html" class="header-nav-link"><span>Podcasts</span></a></li>
                   <li class="header-nav-item"><a href="host.html" class="header-nav-link"><span>Host</span></a></li>
                   <li class="header-nav-item"><a href="about.html" class="header-nav-link"><span>About</span></a></li>
@@ -58,16 +58,113 @@
         </div>
     </header>
     <!-- Header End -->
+    <!-- POdcast start -->
+    <main>
+      <!-- Podcast banner start -->
+      <section class="podcast-banner">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-lg-6">
+              <div class="podcast-featured">
+                <div class="section-header-white">
+                  <span>Featured</span>
+                  <h2>A UX Case Study on Creating a Studious Environment </h2>
+                  <p>Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased to twinkle. By the same illusion which lifts the horizon</p>
+                </div>
+                <div class="btn-play btn-play-secondary mb-5">
+                  <a href="#"><i class="fa-solid fa-play"></i> <span>Listen Now</span></a>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Podcast banner end -->
+
+      <!-- Resent Episodes Card start -->
+      <section class="episode-card my-5" id="episode">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-4">
+                    <div class="section-header">
+                        <h2>Recent Episodes</h2>
+                        <p>Apparently we had reached a great height in the atmosphere, for the sky was a dead black. </p>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-8 flex-container flex-justify-end flex-align-end">
+                    <input type="submit" value="See all episodes" class="btn" id="seeMore">
+                </div>
+            </div>
+        </div>
+        <div class="container my-8">
+            <div class="row episodes" id="episodeContainer">
+                
+            </div>
+        </div>
+      </section>
+      <!-- Resent Episodes end -->
+
+      <!-- Podcast Card start -->
+      <section class="podcast-card my-5" id="episode">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-8">
+                    <div class="section-header">
+                        <h2>All Podcasts</h2>
+                        <ul class="filter-btn-store">
+                            <li class="btn btn-filter active" data-category="All Products">All Products</li>
+                            <li class="btn btn-filter" data-category="Men's Cloting">Men's Cloting</li>
+                            <li class="btn btn-filter" data-category="Jewery">Jewery</li>
+                            <li class="btn btn-filter" data-category="Electronics">Electronics</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container my-8">
+            <div class="row podcast-cards">
+                
+            </div>
+        </div>
+      </section>
+      <!-- Podcast card end -->
+
+      <!-- Hero Start -->
+      <section class="hero my-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-lg-6">
+              <div class="section-header-white p-5">
+                <div class="container">
+                  <h2>Become The Hero <br> Of Your Own Story</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mus cras lacus tellus morbi viverra suspendisse ornare. Sit volutpat, volutpat ut netus malesuada enim penatibus non aliquet.</p>
+                  <div class="col-12 col-lg-6">
+                    <div class="btn btn-trans my-5">Contact us</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6 flex-container flex-justify-end flex-align-end">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 507 114" fill="none">
+                <path d="M315.586 114C315.56 114 315.56 114 315.533 114C314.505 113.987 313.661 113.596 313.529 113.084L285.815 12.3285L275.189 64.7946C275.083 65.2527 274.424 65.6299 273.554 65.7243C272.657 65.8186 271.761 65.603 271.312 65.2123L253.566 49.1518L242.438 62.1672C242.095 62.5849 241.278 62.8274 240.381 62.8005C239.511 62.7735 238.773 62.4502 238.535 62.019L234.686 54.8241L213.247 91.3241C212.957 91.8091 212.061 92.119 211.085 92.0786C210.11 92.0382 209.318 91.6474 209.213 91.1489L201.513 58.5698L189.7 73.512C189.357 73.9566 188.46 74.2261 187.538 74.1722C186.615 74.1183 185.876 73.7545 185.718 73.2829L173.72 33.0104L144.002 98.2225C143.765 98.7211 142.868 99.0714 141.84 99.0444C140.838 99.0175 140.02 98.6133 139.915 98.0878L122.063 8.87922L105.239 58.7854C105.081 59.23 104.396 59.5803 103.525 59.6477C102.655 59.715 101.785 59.4995 101.363 59.1087L91.5538 49.8389L71.144 67.4623C70.6957 67.8396 69.8519 68.0417 69.0081 67.9743C68.1643 67.907 67.4787 67.5701 67.3205 67.139L57.2738 41.4179L44.5112 60.483C44.2211 60.9142 43.43 61.1837 42.5598 61.1837C41.6897 61.1837 40.8986 60.9681 40.6085 60.5504L34.0162 51.0785H2.08316C0.94929 51.0785 0 50.58 0 50.0006C0 49.4212 0.922921 48.9227 2.08316 48.9227H35.5193C36.3895 48.9227 37.1805 49.1787 37.4706 49.5964L42.5598 56.9395L55.8763 37.0121C56.1927 36.554 57.0365 36.2575 57.9858 36.298C58.9351 36.3249 59.6998 36.6752 59.8844 37.1468L70.3793 63.9996L89.8925 47.1442C90.2617 46.8208 90.9736 46.6187 91.712 46.6187C92.4503 46.6322 93.1359 46.8343 93.5051 47.1711L102.207 55.39L120.533 0.875919C120.718 0.350449 121.615 -0.0268109 122.643 0.00013629C123.671 0.0136099 124.542 0.431291 124.647 0.95676L142.763 91.5531L172.112 27.1494C172.349 26.6509 173.219 26.314 174.221 26.3275C175.223 26.341 176.041 26.7317 176.199 27.2302L188.671 69.1331L200.669 53.9618C201.012 53.5172 201.935 53.2477 202.858 53.3016C203.807 53.369 204.546 53.7462 204.651 54.2313L212.114 85.8538L232.761 50.7147C233.024 50.2701 233.842 49.9871 234.738 49.9871H234.765C235.688 49.9871 236.505 50.2835 236.742 50.7282L240.961 58.5698L251.404 46.3493C251.72 45.9855 252.406 45.7295 253.197 45.716C253.988 45.689 254.726 45.9046 255.122 46.2549L271.708 61.2645L283.416 3.46285C283.521 2.9239 284.391 2.5197 285.446 2.50622C286.501 2.49275 287.398 2.88348 287.529 3.42243L315.903 106.388L344.091 29.7094C344.276 29.1974 345.172 28.8336 346.174 28.8471C347.203 28.8605 348.047 29.2378 348.179 29.7633L362.286 80.2623L389.525 43.4524C389.815 43.0617 390.527 42.7922 391.345 42.7653C392.162 42.7383 392.927 42.9539 393.323 43.3177L404.477 53.9888L416.58 44.9076C417.002 44.5842 417.74 44.4091 418.505 44.4495C419.27 44.4899 419.929 44.7324 420.219 45.0827L439.521 68.2303L453.444 47.225C453.734 46.7939 454.525 46.4705 455.396 46.4705C456.292 46.4705 457.083 46.7939 457.347 47.2116L466.075 60.1462L482.688 50.3105C483.083 50.0814 483.663 49.9602 484.27 49.9602H504.917C506.051 49.9602 507 50.4587 507 51.0381C507 51.6174 506.077 52.1159 504.917 52.1159H485.219L466.866 62.9756C466.392 63.2586 465.627 63.3799 464.915 63.3125C464.176 63.2451 463.596 62.9622 463.333 62.6119L455.422 50.8764L441.71 71.5448C441.446 71.9625 440.682 72.2455 439.811 72.2589C438.941 72.2724 438.15 72.0164 437.834 71.6122L417.872 47.6966L405.98 56.6296C405.558 56.9395 404.872 57.1146 404.16 57.0877C403.422 57.0742 402.789 56.8586 402.446 56.5218L391.819 46.3627L363.341 84.8433C362.998 85.3014 362.101 85.5708 361.178 85.5169C360.229 85.4631 359.491 85.0858 359.359 84.6142L345.884 36.3923L317.696 113.111C317.458 113.636 316.588 114 315.586 114Z" fill="#1AD993"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Hero end -->
+    </main>
+    <!-- POdcast end -->
 <!-- Footer start -->
     <div class="container">
         <section class="sponsors">
             <div class="section-header-white">
-                <div class="container">
-                    <h2>Our Sponsor</h2>
-                </div>
+              <div class="container">
+                <h2>Our Sponsor</h2>
               </div>
+            </div>
               <div class="sponsor-slider">
-                  <div class="container">
+                <div class="container">
                       <div class="row">
                         <div class="client-slider-track" id="sponsors">
                           <div class="client-slider-pic"><img src="images/logos/Logo-1.png" class="client-pic" draggable="false"
@@ -82,7 +179,7 @@
                               alt=""></div>
                         </div>
                       </div>
-                    </div>
+                </div>
               </div>
         </section>
     </div>

@@ -28,11 +28,13 @@
 .section-header-white {
   @extend .py-2;
   @extend .flex-justify-center;
-  @extend .flex-align-center;
-  text-align: center;
 
   h2 {
     color: map-get($colors, light) !important;
+  }
+  p{
+    color: map-get($colors, natural);
+    line-height: 1.75
   }
 }
 

@@ -160,4 +160,10 @@
       }
     }
   }
+
+}
+
+.active-link {
+  @extend .font-weight-700;
+  color: map-get($colors, info)
 }
