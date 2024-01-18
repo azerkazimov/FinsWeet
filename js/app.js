@@ -27,9 +27,9 @@ fetchData(episode);
 fetchData(podcast);
 
 // Fetch Post
-
+const articles = document.querySelector('.articles')
 import { fetchPost } from "./api-store.js";
-fetchPost();
+fetchPost(articles);
 
 document.addEventListener("DOMContentLoaded", function () {
   const currentPage = window.location.href;

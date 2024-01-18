@@ -18,11 +18,11 @@ export function fetchUser() {
     .catch((error) => console.error("Error fetching data: ", error));
 }
 
-export function fetchPost() {
+export function fetchPost(element) {
   fetch("https://freetestapi.com/api/v1/currencies?sort=name&order=dec&limit=4")
-    .then((response) => response.json()) // Fix: added parentheses after json
+    .then((response) => response.json()) 
     .then((data) => {
-      generatePost(data);
+      generatePost(data, element);
     })
     .catch((error) => console.error("Error fetching data:", error));
 }

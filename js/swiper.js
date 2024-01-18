@@ -1,8 +1,8 @@
 import Swiper from "https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs";
 
-export const swiperFunc=(data)=>{
-   // Initialize Swiper
-   const swiper = new Swiper(".mySwiper", {
+export const swiperFunc = (data) => {
+  // Initialize Swiper
+  const swiper = new Swiper(".mySwiper", {
     slidesPerView: 3,
     // slidesPerGroup: 3,
     spaceBetween: 20,
@@ -42,11 +42,6 @@ export const swiperFunc=(data)=>{
           </div>
         </div>
     </div>
-          
-      
     `);
   });
-}
-
-
-
+};
