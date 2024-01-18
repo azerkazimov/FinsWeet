@@ -1,8 +1,3 @@
-// Swiper
-import { fetchUser } from "./api-store.js";
-
-const mySwiper = document.querySelector('.listener-user')
-fetchUser(mySwiper);
 
 // Burger menu
 import { initializeBurgerMenu } from "./header.js";
@@ -23,10 +18,9 @@ initializeSlider(sponsors);
 // Fetch Episodes
 import { fetchData } from "./api-store.js";
 const episode = document.querySelector(".episodes");
-const podcast = document.querySelector(".podcast-cards");
 
 fetchData(episode);
-fetchData(podcast);
+
 
 // Fetch Post
 const articles = document.querySelector('.articles')
@@ -44,14 +38,14 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
+// Swiper
+import { fetchUser } from "./api-store.js";
+
+const mySwiper = document.querySelector('.listener-user')
+fetchUser(mySwiper);
+
+// Filter Cards by category function
 import { setupFilterButtons } from "./filter.js";
 setupFilterButtons()
-
-
-// const filterBtn = document.querySelectorAll(".btn-filter");
-
-// import { filterDatas } from "./filter.js";
-
-// filterDatas(filterBtn);
 
 

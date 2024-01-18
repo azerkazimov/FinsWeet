@@ -1,11 +1,14 @@
+// filter.js
+import { fetchData } from "./api-store.js";
 import { generateCard } from "./showCard.js";
-
-// filterButtons.js
 
 export function setupFilterButtons() {
   const filterBtn = document.querySelectorAll(".btn-filter");
-  const allCards = document.querySelector(".common-card-container");
-  console.log(allCards);
+  const podcastSection = document.querySelector(".podcast-cards");
+
+  fetchData().then((data) => {
+    generateCard(data, podcastSection);
+  });
 
   filterBtn.forEach((filter) => {
     filter.addEventListener("click", function () {
@@ -16,14 +19,19 @@ export function setupFilterButtons() {
       filter.classList.add("active");
 
       const cardCategory = filter.getAttribute("data-category").toLowerCase();
-      console.log(cardCategory);
-      // Filter cards based on the selected category
-      filterBtn.forEach((card) => {
-        // card.style.display =
-        //   cardCategory === selectedCategory || selectedCategory === "all"
-        //     ? "block"
-        //     : "none";
-      });
+
+      // Filter cards based on the selected category only within the podcast section
+      podcastSection
+        .querySelectorAll(".common-card-container")
+        .forEach((card) => {
+          const cardDataCategory = card
+            .getAttribute("data-category")
+            .toLowerCase();
+          card.style.display =
+            cardDataCategory === selectedCategory || selectedCategory === "all"
+              ? "block"
+              : "none";
+        });
     });
   });
 }

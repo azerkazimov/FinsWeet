@@ -2,8 +2,6 @@
 export function generateCard(cards, element) {
   if (!element) return;
 
-  element.innerHTML = "";
-
   cards.forEach((elem) => {
     element.innerHTML += `
         <div class="col-12 col-md-6 col-lg-4">
