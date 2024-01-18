@@ -1,6 +1,8 @@
 import Swiper from "https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs";
 
-export const swiperFunc = (data) => {
+export const swiperFunc = (data, element) => {
+  if (!element) return;
+
   // Initialize Swiper
   const swiper = new Swiper(".mySwiper", {
     slidesPerView: 3,

@@ -9,11 +9,11 @@ export function fetchData(element) {
 
 import { swiperFunc } from "./swiper.js";
 
-export function fetchUser() {
+export function fetchUser(element) {
   fetch("https://freetestapi.com/api/v1/users?limit=12")
     .then((response) => response.json())
     .then((data) => {
-      swiperFunc(data);
+      swiperFunc(data, element);
     })
     .catch((error) => console.error("Error fetching data: ", error));
 }

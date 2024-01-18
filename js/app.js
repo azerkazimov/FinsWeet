@@ -1,6 +1,8 @@
 // Swiper
 import { fetchUser } from "./api-store.js";
-fetchUser();
+
+const mySwiper = document.querySelector('.listener-user')
+fetchUser(mySwiper);
 
 // Burger menu
 import { initializeBurgerMenu } from "./header.js";

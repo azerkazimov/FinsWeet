@@ -4,7 +4,7 @@ import { generateCard } from "./showCard.js";
 
 export function setupFilterButtons() {
   const filterBtn = document.querySelectorAll(".btn-filter");
-  const allCards = document.querySelector("common-card-container");
+  const allCards = document.querySelector(".common-card-container");
   console.log(allCards);
 
   filterBtn.forEach((filter) => {
