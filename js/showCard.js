@@ -1,11 +1,11 @@
 // Generate card for episodes section
-export function generateCard(cards, element) {
+export function generateCard(cards, element, count) {
   if (!element) return;
 
-  cards.forEach((elem) => {
+  cards.slice(0, count).forEach((elem) => {
     element.innerHTML += `
-        <div class="col-12 col-md-6 col-lg-4">
-          <div class="common-card-container" id="${elem.id}" data-category="${elem.category}">
+        <div class="col-12 col-md-6 col-lg-4 podcasts" id="${elem.id}" data-category="${elem.category}">
+          <div class="common-card-container" >
             <div class="card-image">
                 <img src=${elem.image} alt="">
                 <div class="card-icon">

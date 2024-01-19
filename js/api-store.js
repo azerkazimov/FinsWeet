@@ -1,10 +1,10 @@
 // Get data from Fake Store API and paste it into card element
 import { generateCard, generatePost } from "./showCard.js";
-export function fetchData(element) {
+export function fetchData(element, maxCount) {
   return fetch("https://fakestoreapi.com/products?limit=14")
     .then((data) => data.json())
     .then((complatedata) => {
-      generateCard(complatedata, element);
+      generateCard(complatedata, element, maxCount);
       return complatedata;
     })
     .catch((error) => console.error("Error fetching data:", error));

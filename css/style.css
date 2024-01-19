@@ -2618,6 +2618,14 @@ a {
   height: 370px;
 }
 
+.d-none {
+  display: none;
+}
+
+.expanded {
+  display: grid;
+}
+
 .form-wave {
   padding: 50px 0;
 }

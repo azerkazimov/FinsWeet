@@ -1,4 +1,3 @@
-
 // Burger menu
 import { initializeBurgerMenu } from "./header.js";
 initializeBurgerMenu();
@@ -18,12 +17,35 @@ initializeSlider(sponsors);
 // Fetch Episodes
 import { fetchData } from "./api-store.js";
 const episode = document.querySelector(".episodes");
+const seeMoreBtn = document.getElementById("seeMore");
+const initialCardCount = 3;
 
-fetchData(episode);
+fetchData(episode, initialCardCount);
 
+document.addEventListener("DOMContentLoaded", () => {
+  if (seeMoreBtn) {
+    seeMoreBtn.addEventListener("click", () => {
+      const isExpanded = episodeContainer.classList.contains("expanded");
+
+      if (isExpanded) {
+        // If already expanded, hide all cards
+        episodeContainer.innerHTML = "";
+        fetchData(episodeContainer, initialCardCount);
+        episodeContainer.classList.remove("expanded");
+      } else {
+        // If not expanded, show all cards
+        fetchData(episodeContainer).then((data) => {
+          // If you want to display all cards, you can remove the initialCardCount parameter.
+          // generateCard(data, episodeContainer);
+          episodeContainer.classList.add("expanded");
+        });
+      }
+    });
+  }
+});
 
 // Fetch Post
-const articles = document.querySelector('.articles')
+const articles = document.querySelector(".articles");
 import { fetchPost } from "./api-store.js";
 fetchPost(articles);
 
@@ -37,15 +59,13 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-
 // Swiper
 import { fetchUser } from "./api-store.js";
 
-const mySwiper = document.querySelector('.listener-user')
+const mySwiper = document.querySelector(".listener-user");
 fetchUser(mySwiper);
 
 // Filter Cards by category function
 import { setupFilterButtons } from "./filter.js";
-setupFilterButtons()
-
-
+import { generateCard } from "./showCard.js";
+setupFilterButtons();
