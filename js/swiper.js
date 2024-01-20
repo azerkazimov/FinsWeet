@@ -5,7 +5,7 @@ export const swiperFunc = (data, element) => {
 
   // Initialize Swiper
   const swiper = new Swiper(".mySwiper", {
-    slidesPerView: 3,
+    // slidesPerView: 3,
     // slidesPerGroup: 3,
     spaceBetween: 20,
     loop: true,
@@ -16,6 +16,17 @@ export const swiperFunc = (data, element) => {
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+      376: {
+        slidesPerView: 1,
+      },
+      768: {
+        slidesPerView: 2,
+      },
+      1024: {
+        slidesPerView: 3,
+      }
     },
   });
 

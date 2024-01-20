@@ -65,6 +65,9 @@
 
 
 .listener-card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
     .card-image {
         @extend .flex-container;
@@ -140,10 +143,36 @@
     }
 }
 
-.d-none {
-    display: none;
-}
-
 .expanded {
     display: grid;
+}
+
+.counters {
+    .counter {
+        @extend .flex-container;
+        @extend .flex-column;
+        @extend .flex-justify-center;
+        @extend .flex-align-center;
+        @extend .p-5;
+
+        color: map-get($colors, natural);
+        background-color: map-get($colors, primary);
+        gap: 75px;
+
+        
+
+        .counter-content {
+            h5, span {
+                @extend .font-size-48;
+                @extend .font-weight-700;
+                line-height: 1.2;
+            }
+
+            p {
+                @extend .font-size-24;
+                @extend .font-weight-700;
+                line-height: 1.2;
+            }
+        }
+    }
 }

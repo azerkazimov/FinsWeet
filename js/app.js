@@ -69,3 +69,39 @@ fetchUser(mySwiper);
 import { setupFilterButtons } from "./filter.js";
 import { generateCard } from "./showCard.js";
 setupFilterButtons();
+
+// Counter
+import { generateCounter, setCounter } from "./counter.js";
+const counterDB = [
+  {
+    icon: "../images/icons/Icon.png",
+    count: 500,
+    value: "+",
+    title: "Podcast",
+  },
+  {
+    icon: "../images/icons/Icon-1.png",
+    count: 24,
+    value: "M",
+    title: "Views",
+  },
+  {
+    icon: "../images/icons/Icon-2.png",
+    count: 600,
+    value: "K",
+    title: "Subscribers",
+  },
+  {
+    icon: "../images/icons/Icon-3.png",
+    count: 24,
+    value: "M",
+    title: "Views",
+  },
+];
+// generate coutenr card
+const counterContainer = document.querySelector(".counters-container");
+generateCounter(counterContainer, counterDB);
+
+// start counter
+const counts = document.querySelectorAll(".count-num");
+setCounter(counts);

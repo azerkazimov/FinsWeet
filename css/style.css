@@ -179,7 +179,7 @@ a {
   padding-bottom: 20px !important;
 }
 
-.p-5, .hero, .podcast-banner .podcast-featured, .podcast-banner, .section-content .podcast-image {
+.p-5, .hero, .podcast-banner .podcast-featured, .podcast-banner, .counters .counter, .section-content .podcast-image {
   padding: 25px !important;
 }
 
@@ -204,7 +204,7 @@ a {
   padding-right: 25px !important;
 }
 
-.py-5, .brands, .common-card-container {
+.py-5, .common-card-container {
   padding-top: 25px !important;
   padding-bottom: 25px !important;
 }
@@ -439,7 +439,7 @@ a {
   margin-left: 10px !important;
 }
 
-.mx-2, .section-content .youtube-image .youtube-subscribe i {
+.mx-2, .section-content .dream-image .dream-shapes i, .section-content .youtube-image .youtube-subscribe i {
   margin-left: 10px !important;
   margin-right: 10px !important;
 }
@@ -975,11 +975,11 @@ a {
   align-items: end !important;
 }
 
-.flex-justify-center, .common-card-container i, .section-header-white, .btn-play i, .section-content .youtube-image .youtube-subscribe, .section-content .section-image {
+.flex-justify-center, .host-banner .host-image, .counters .counter, .common-card-container i, .section-header-white, .btn-play i, .section-content .dream-image .dream-shapes, .section-content .youtube-image .youtube-subscribe, .section-content .section-image {
   justify-content: center !important;
 }
 
-.flex-align-center, .home .banner .banner-waves, .common-card-container i, .btn-play i, .btn-play a, .section-content .youtube-image .youtube-subscribe, .section-content .section-text {
+.flex-align-center, .home .banner .banner-waves, .counters .counter, .common-card-container i, .btn-play i, .btn-play a, .section-content .dream-image .dream-shapes, .section-content .youtube-image .youtube-subscribe, .section-content .section-text {
   align-items: center !important;
 }
 
@@ -1192,7 +1192,7 @@ a {
 }
 
 @media (min-width: 992px) {
-  .flex-justify-lg-end {
+  .flex-justify-lg-end, .host-banner .host-image {
     justify-content: end !important;
   }
 }
@@ -1419,12 +1419,12 @@ a {
     margin-left: 41.6666666667%;
   }
 }
-.flex-container, .home .banner .banner-waves, .articles-card .read-news .transform-shapes, .listener-card-container .card-image .listener-description, .listener-card-container .card-image, .common-card-container i, .common-card-container .card-info, .common-card-container, .section-title, .section-header,
-.section-header-white, .filter-btn-store, .btn-play i, .btn-play a, .section-content .youtube-image .youtube-subscribe, .section-content .section-image, .section-content .section-text {
+.flex-container, .host-banner .host-image, .home .banner .banner-waves, .counters .counter, .articles-card .read-news .transform-shapes, .listener-card-container .card-image .listener-description, .listener-card-container .card-image, .common-card-container i, .common-card-container .card-info, .common-card-container, .section-title, .section-header,
+.section-header-white, .filter-btn-store, .btn-play i, .btn-play a, .section-content .dream-image .dream-shapes, .section-content .youtube-image .youtube-subscribe, .section-content .section-image, .section-content .section-text {
   display: flex;
 }
 
-.flex-column, .listener-card-container .card-image .listener-description, .common-card-container .card-info, .common-card-container, .section-title, .section-header,
+.flex-column, .counters .counter, .listener-card-container .card-image .listener-description, .common-card-container .card-info, .common-card-container, .section-title, .section-header,
 .section-header-white {
   flex-direction: column;
 }
@@ -1561,6 +1561,18 @@ a {
   border-color: #AFB0B9 !important;
 }
 
+.bg-overlay {
+  background-color: rgba(255, 255, 255, 0.7) !important;
+}
+
+.text-overlay {
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+
+.border-overlay {
+  border-color: rgba(255, 255, 255, 0.7) !important;
+}
+
 .font-size-10 {
   font-size: 10px !important;
 }
@@ -1585,7 +1597,8 @@ a {
   font-size: 15px !important;
 }
 
-.font-size-16, .home .banner .banner-text p, .form-control, .btn, .section-content .section-text p, .footer .footer-widgets .widget .footer-menu li, .header .header-main-menu .mobile-nav li span, .header .header-main-menu .header-nav-link span {
+.font-size-16, .home .banner .banner-text p, .section-header span,
+.section-header-white span, .form-control, .btn, .footer .footer-widgets .widget .footer-menu li, .header .header-main-menu .mobile-nav li span, .header .header-main-menu .header-nav-link span {
   font-size: 16px !important;
 }
 
@@ -1617,7 +1630,7 @@ a {
   font-size: 23px !important;
 }
 
-.font-size-24, .common-card-container .card-text h3 {
+.font-size-24, .counters .counter .counter-content p, .common-card-container .card-text h3 {
   font-size: 24px !important;
 }
 
@@ -1650,7 +1663,7 @@ a {
 }
 
 .font-size-32, .section-header h2,
-.section-header-white h2, .section-content .youtube-image .youtube-subscribe i {
+.section-header-white h2, .section-content .dream-image .dream-shapes i, .section-content .youtube-image .youtube-subscribe i {
   font-size: 32px !important;
 }
 
@@ -1714,7 +1727,7 @@ a {
   font-size: 47px !important;
 }
 
-.font-size-48, .home .banner .banner-text h1 {
+.font-size-48, .home .banner .banner-text h1, .counters .counter .counter-content h5, .counters .counter .counter-content span {
   font-size: 48px !important;
 }
 
@@ -1954,7 +1967,7 @@ a {
   font-weight: 300 !important;
 }
 
-.font-weight-400, .home .banner .banner-text p, .section-content .section-text p, .footer .footer-widgets .widget .footer-menu li, .header .header-main-menu .header-nav-link span {
+.font-weight-400, .home .banner .banner-text p, .footer .footer-widgets .widget .footer-menu li, .header .header-main-menu .header-nav-link span {
   font-weight: 400 !important;
 }
 
@@ -1962,11 +1975,12 @@ a {
   font-weight: 500 !important;
 }
 
-.font-weight-600, .common-card-container .card-text h3, .footer .footer-copyright .copyright a {
+.font-weight-600, .common-card-container .card-text h3, .section-header span,
+.section-header-white span, .footer .footer-copyright .copyright a {
   font-weight: 600 !important;
 }
 
-.font-weight-700, .home .banner .banner-text h1, .section-header a,
+.font-weight-700, .home .banner .banner-text h1, .counters .counter .counter-content p, .counters .counter .counter-content h5, .counters .counter .counter-content span, .section-header a,
 .section-header-white a, .btn-play a, .footer .footer-widgets .widget h6, .active-link {
   font-weight: 700 !important;
 }
@@ -1983,9 +1997,12 @@ a {
   font-weight: 1000 !important;
 }
 
-@media (min-width: 576px) {
+@media (max-width: 576px) {
   .container {
     max-width: 540px !important;
+  }
+  .btn {
+    flex-grow: 1;
   }
 }
 @media screen and (max-width: 767px) {
@@ -2239,6 +2256,8 @@ a {
   max-width: 90%;
 }
 .section-content .section-text p {
+  font-weight: 400;
+  font-size: 16px;
   max-width: 100%;
   color: #14142B;
   margin-bottom: 30px;
@@ -2289,6 +2308,28 @@ a {
   right: -20px;
 }
 .section-content .youtube-image .youtube-subscribe i {
+  color: #1AD993;
+}
+.section-content .dream-image {
+  height: 512px;
+  width: 100%;
+  position: relative;
+  background-image: url("../images/man-wearing.png");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: contain;
+  z-index: 1;
+}
+.section-content .dream-image .dream-shapes {
+  width: 260px;
+  height: 80px;
+  background-color: #503AE7;
+  position: absolute;
+  bottom: 60px;
+  left: -20px;
+}
+.section-content .dream-image .dream-shapes i {
   color: #1AD993;
 }
 
@@ -2411,6 +2452,7 @@ a {
   flex-wrap: wrap;
   align-items: stretch;
   width: 100%;
+  gap: 10px 0;
 }
 
 .bounce-effect {
@@ -2520,6 +2562,12 @@ a {
 .section-header-white a:hover {
   color: #832BC1;
 }
+.section-header span,
+.section-header-white span {
+  letter-spacing: 3px;
+  color: #832BC1;
+  text-transform: uppercase;
+}
 
 .section-header-white h2 {
   color: #F4F2FF !important;
@@ -2580,6 +2628,11 @@ a {
   background-color: #832BC1;
 }
 
+.listener-card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .listener-card-container .card-image img {
   height: 80px;
   width: 80px;
@@ -2618,12 +2671,20 @@ a {
   height: 370px;
 }
 
-.d-none {
-  display: none;
-}
-
 .expanded {
   display: grid;
+}
+
+.counters .counter {
+  color: #fff;
+  background-color: #503AE7;
+  gap: 75px;
+}
+.counters .counter .counter-content h5, .counters .counter .counter-content span {
+  line-height: 1.2;
+}
+.counters .counter .counter-content p {
+  line-height: 1.2;
 }
 
 .form-wave {
@@ -2728,4 +2789,34 @@ a {
 .hero svg {
   background-color: #503AE7;
   width: 70%;
+}
+
+.host-banner .host-image {
+  position: relative;
+  width: 100%;
+  height: 500px;
+}
+.host-banner .host-image .clipped-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+}
+.host-banner .host-image svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+.host-banner .host-image svg path {
+  fill: black;
+}
+.host-banner .host-image svg rect {
+  fill: white;
+  mask: url(#mask);
+}
+
+.hero-host {
+  background-image: url("../images/pexels-cottonbro-studio-6878173.jpg") !important;
+  background-position: 0 -200px !important;
 }/*# sourceMappingURL=style.css.map */

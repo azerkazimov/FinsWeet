@@ -9,8 +9,8 @@
     max-width: 90%;
 
     p {
-      @extend .font-weight-400;
-      @extend .font-size-16;
+      font-weight: 400;
+      font-size: 16px;
       max-width: 100%;
       color: map-get($colors, inky);
       margin-bottom: 30px;
@@ -84,6 +84,39 @@
       position: absolute;
       bottom: 60px;
       right: -20px;
+
+      i {
+        @extend .font-size-32;
+        @extend .mx-2;
+        color: map-get($colors, secondary);
+      }
+    }
+  }
+
+  .dream-image {
+    height: 512px;
+    width: 100%;
+    position: relative;
+    background-image: url('../images/man-wearing.png');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: contain;
+    z-index: 1;
+    
+
+    .dream-shapes {
+      @extend .flex-container;
+      @extend .flex-justify-center;
+      @extend .flex-align-center;
+
+
+      width: 260px;
+      height: 80px;
+      background-color: map-get($colors, primary);
+      position: absolute;
+      bottom: 60px;
+      left: -20px;
 
       i {
         @extend .font-size-32;

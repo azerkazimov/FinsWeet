@@ -21,6 +21,13 @@
       color: map-get($colors, info)
     }
   }
+  span{
+    @extend .font-weight-600;
+    @extend .font-size-16;
+    letter-spacing: 3px;
+    color: map-get($colors, info);
+    text-transform: uppercase;
+  }
 
 }
 
