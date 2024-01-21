@@ -114,19 +114,21 @@
         height: 600px;
         background-color: map-get($colors, light);
 
-        .transform-shapes {
+        
+    }
+}
+
+.transform-shapes {
             @extend .flex-container;
             @extend .flex-justify-space-between;
-            @extend .flex-align-start;
+            @extend .flex-align-center;
             position: relative;
-            top: -15%;
+            top: -10%;
             transform: rotate(-135deg);
-            min-height: 100%;
-            width: 100%;
 
             .shape {
                 width: 75px;
-                height: 460px;
+                height: 420px;
                 background-color: map-get($colors, primary);
 
             }
@@ -137,12 +139,9 @@
             }
 
             .shape-three {
-                height: 370px;
+                height: 231px;
             }
         }
-    }
-}
-
 .expanded {
     display: grid;
 }

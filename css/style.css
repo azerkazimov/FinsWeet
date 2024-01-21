@@ -179,7 +179,7 @@ a {
   padding-bottom: 20px !important;
 }
 
-.p-5, .hero, .podcast-banner .podcast-featured, .podcast-banner, .counters .counter, .section-content .podcast-image {
+.p-5, .about-subscribes .subscribe-card, .hero, .podcast-banner .podcast-featured, .podcast-banner, .counters .counter, .section-content .podcast-image {
   padding: 25px !important;
 }
 
@@ -204,7 +204,7 @@ a {
   padding-right: 25px !important;
 }
 
-.py-5, .common-card-container {
+.py-5, .about-subscribes .subscribe-card .subscribe-description h4, .about-subscribes .subscribe-card .subscribe-description span, .common-card-container {
   padding-top: 25px !important;
   padding-bottom: 25px !important;
 }
@@ -329,7 +329,7 @@ a {
   padding-bottom: 45px !important;
 }
 
-.p-10 {
+.p-10, .about-banner .microphone {
   padding: 50px !important;
 }
 
@@ -963,7 +963,7 @@ a {
   justify-content: start !important;
 }
 
-.flex-align-start, .articles-card .read-news .transform-shapes, .listener-card-container .card-image .listener-description, .section-title {
+.flex-align-start, .listener-card-container .card-image .listener-description, .section-title {
   align-items: start !important;
 }
 
@@ -979,11 +979,11 @@ a {
   justify-content: center !important;
 }
 
-.flex-align-center, .home .banner .banner-waves, .counters .counter, .common-card-container i, .btn-play i, .btn-play a, .section-content .dream-image .dream-shapes, .section-content .youtube-image .youtube-subscribe, .section-content .section-text {
+.flex-align-center, .home .banner .banner-waves, .counters .counter, .transform-shapes, .common-card-container i, .btn-play i, .btn-play a, .section-content .dream-image .dream-shapes, .section-content .youtube-image .youtube-subscribe, .section-content .section-text {
   align-items: center !important;
 }
 
-.flex-justify-space-between, .articles-card .read-news .transform-shapes, .listener-card-container .card-image .listener-description, .common-card-container .card-info {
+.flex-justify-space-between, .transform-shapes, .listener-card-container .card-image .listener-description, .common-card-container .card-info {
   justify-content: space-between !important;
 }
 
@@ -1419,7 +1419,7 @@ a {
     margin-left: 41.6666666667%;
   }
 }
-.flex-container, .host-banner .host-image, .home .banner .banner-waves, .counters .counter, .articles-card .read-news .transform-shapes, .listener-card-container .card-image .listener-description, .listener-card-container .card-image, .common-card-container i, .common-card-container .card-info, .common-card-container, .section-title, .section-header,
+.flex-container, .host-banner .host-image, .home .banner .banner-waves, .counters .counter, .transform-shapes, .listener-card-container .card-image .listener-description, .listener-card-container .card-image, .common-card-container i, .common-card-container .card-info, .common-card-container, .section-title, .section-header,
 .section-header-white, .filter-btn-store, .btn-play i, .btn-play a, .section-content .dream-image .dream-shapes, .section-content .youtube-image .youtube-subscribe, .section-content .section-image, .section-content .section-text {
   display: flex;
 }
@@ -1614,7 +1614,7 @@ a {
   font-size: 19px !important;
 }
 
-.font-size-20, .footer .footer-widgets .widget h6 {
+.font-size-20, .about-subscribes .subscribe-card .subscribe-description h4, .about-subscribes .subscribe-card .subscribe-description span, .footer .footer-widgets .widget h6 {
   font-size: 20px !important;
 }
 
@@ -1975,7 +1975,7 @@ a {
   font-weight: 500 !important;
 }
 
-.font-weight-600, .common-card-container .card-text h3, .section-header span,
+.font-weight-600, .about-subscribes .subscribe-card .subscribe-description h4, .about-subscribes .subscribe-card .subscribe-description span, .common-card-container .card-text h3, .section-header span,
 .section-header-white span, .footer .footer-copyright .copyright a {
   font-weight: 600 !important;
 }
@@ -2059,6 +2059,9 @@ a {
   }
   .youtube-subscribe {
     right: 20px !important;
+  }
+  .microphone {
+    overflow: hidden;
   }
   .stiky-arrow-up {
     left: 88% !important;
@@ -2548,6 +2551,7 @@ a {
 .section-header-white {
   width: 100%;
   margin: 0 auto;
+  line-height: 1.75;
 }
 .section-header h2,
 .section-header-white h2 {
@@ -2651,24 +2655,23 @@ a {
   height: 600px;
   background-color: #F4F2FF;
 }
-.articles-card .read-news .transform-shapes {
+
+.transform-shapes {
   position: relative;
-  top: -15%;
+  top: -10%;
   transform: rotate(-135deg);
-  min-height: 100%;
-  width: 100%;
 }
-.articles-card .read-news .transform-shapes .shape {
+.transform-shapes .shape {
   width: 75px;
-  height: 460px;
+  height: 420px;
   background-color: #503AE7;
 }
-.articles-card .read-news .transform-shapes .shape-two {
+.transform-shapes .shape-two {
   height: 615px;
   background-color: #1AD993;
 }
-.articles-card .read-news .transform-shapes .shape-three {
-  height: 370px;
+.transform-shapes .shape-three {
+  height: 231px;
 }
 
 .expanded {
@@ -2711,6 +2714,33 @@ a {
   background-image: url("../images/vector/Vector.png");
   animation: waves 20s infinite linear;
 }
+
+.form-shape {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.form-shape .shapes-wave {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0px;
+  margin: auto;
+  overflow: hidden;
+  height: 100px;
+  width: 100%;
+}
+.form-shape .shapes-wave .shape-wave {
+  left: 0;
+  width: 200%;
+  height: 90%;
+  background-repeat: repeat no-repeat;
+  background-position: 0 bottom;
+  transform-origin: center bottom;
+  background-image: url("../images/vector/Vector-1.png");
+  animation: waves 20s infinite linear;
+}
+
 @keyframes waves {
   0% {
     transform: translateX(0) translateZ(0);
@@ -2722,7 +2752,6 @@ a {
     transform: translateX(-50%) translateZ(0);
   }
 }
-
 .home {
   min-width: 100%;
 }
@@ -2819,4 +2848,19 @@ a {
 .hero-host {
   background-image: url("../images/pexels-cottonbro-studio-6878173.jpg") !important;
   background-position: 0 -200px !important;
+}
+
+.about-banner .microphone {
+  position: relative;
+  overflow: hidden;
+}
+.about-banner .microphone .microphone-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.about-subscribes .subscribe-card {
+  text-align: center;
 }/*# sourceMappingURL=style.css.map */

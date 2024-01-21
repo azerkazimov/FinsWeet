@@ -71,7 +71,8 @@ import { generateCard } from "./showCard.js";
 setupFilterButtons();
 
 // Counter
-import { generateCounter, setCounter } from "./counter.js";
+import { generateCounter } from "./showCard.js";
+import { setCounter } from "./counter.js";
 const counterDB = [
   {
     icon: "../images/icons/Icon.png",
@@ -101,6 +102,40 @@ const counterDB = [
 // generate coutenr card
 const counterContainer = document.querySelector(".counters-container");
 generateCounter(counterContainer, counterDB);
+
+
+
+// About Icons subscribe
+import { genrateIcon } from "./showCard.js";
+const iconsDB = [
+  {
+    icon: "../images/icons/Icon-4.png",
+    count: 500,
+    value: "+",
+    title: "Podcast",
+    description:
+      "Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased to twinkle. ",
+  },
+  {
+    icon: "../images/icons/Icon-5.png",
+    count: 24,
+    value: "M",
+    title: "Views",
+    description:
+      "Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased to twinkle. ",
+  },
+  {
+    icon: "../images/icons/Icon-6.png",
+    count: 600,
+    value: "K",
+    title: "Subs",
+    description:
+      "Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased to twinkle. ",
+  },
+];
+
+const iconContainer = document.querySelector(".about-container");
+genrateIcon(iconContainer, iconsDB)
 
 // start counter
 const counts = document.querySelectorAll(".count-num");

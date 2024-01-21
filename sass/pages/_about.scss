@@ -1,0 +1,32 @@
+.about-banner {
+    .microphone {
+        @extend .p-10;
+        position: relative;
+        overflow: hidden;
+
+        .microphone-image {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+}
+
+.about-subscribes {
+    .subscribe-card {
+        @extend .p-5;
+        text-align: center;
+
+        .subscribe-icon {}
+
+        .subscribe-description {
+            h4, span {
+                @extend .py-5;
+                @extend .font-weight-600;
+                @extend .font-size-20;
+
+            }
+        }
+    }
+}
