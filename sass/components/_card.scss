@@ -114,34 +114,35 @@
         height: 600px;
         background-color: map-get($colors, light);
 
-        
+
     }
 }
 
 .transform-shapes {
-            @extend .flex-container;
-            @extend .flex-justify-space-between;
-            @extend .flex-align-center;
-            position: relative;
-            top: -10%;
-            transform: rotate(-135deg);
+    @extend .flex-container;
+    @extend .flex-justify-space-between;
+    @extend .flex-align-center;
+    position: relative;
+    top: -10%;
+    transform: rotate(-135deg);
 
-            .shape {
-                width: 75px;
-                height: 420px;
-                background-color: map-get($colors, primary);
+    .shape {
+        width: 75px;
+        height: 420px;
+        background-color: map-get($colors, primary);
 
-            }
+    }
 
-            .shape-two {
-                height: 615px;
-                background-color: map-get($colors, secondary);
-            }
+    .shape-two {
+        height: 615px;
+        background-color: map-get($colors, secondary);
+    }
 
-            .shape-three {
-                height: 231px;
-            }
-        }
+    .shape-three {
+        height: 231px;
+    }
+}
+
 .expanded {
     display: grid;
 }
@@ -158,10 +159,12 @@
         background-color: map-get($colors, primary);
         gap: 75px;
 
-        
+
 
         .counter-content {
-            h5, span {
+
+            h5,
+            span {
                 @extend .font-size-48;
                 @extend .font-weight-700;
                 line-height: 1.2;
@@ -171,6 +174,115 @@
                 @extend .font-size-24;
                 @extend .font-weight-700;
                 line-height: 1.2;
+            }
+        }
+    }
+}
+
+.team-members {
+    @extend .mb-10;
+
+    .team-member {
+        @extend .p-1;
+
+        .member-img img {
+            width: 100%;
+            object-fit: cover
+        }
+
+        .member-info {
+            h2 {
+                @extend .my-5;
+                @extend .font-size-32;
+            }
+
+            span {
+                @extend .font-size-16;
+                color: map-get($colors, silvery);
+            }
+
+            .member-sosial {
+                @extend .mt-3;
+                gap: 25px;
+
+                i {
+                    @extend .font-size-20;
+                    color: map-get($colors, primary);
+                    transition: all 0.3s ease;
+
+                    &:hover {
+                        color: map-get($colors, info);
+                    }
+                }
+            }
+        }
+    }
+}
+
+.our-sponsors {
+    .sponsor-item {
+        @extend .flex-container;
+        @extend .flex-justify-center;
+        @extend .flex-align-center;
+        @extend .p-1;
+
+        height: 224px;
+        min-height: 100%;
+        transition: all 0.3s ease-in;
+        background-color: map-get($colors, light);
+
+        img {
+            transition: all 0.3s ease-in;
+            filter: brightness(0);
+        }
+
+        &:hover {
+            background-color: map-get($colors, primary);
+
+            img {
+                filter: brightness(100%);
+            }
+        }
+    }
+
+    .sponsor-item-custom {
+        height: 224px;
+        min-height: 100%;
+
+        @extend .flex-container;
+        @extend .flex-column;
+        @extend .flex-justify-space-around;
+        @extend .p-5;
+        background-color: map-get($colors, primary);
+        color: map-get($colors, natural);
+        transition: all 0.3s ease-in;
+
+        &:hover {
+            background-color: map-get($colors, info);
+        }
+
+        h3 {
+            @extend .font-size-24;
+        }
+
+        a {
+            opacity: 0.8;
+            transition: 0.3s ease;
+            position: relative;
+
+            &:hover {
+                @extend .font-weight-700;
+                opacity: 1;
+            }
+
+            &::after {
+                content: '';
+                position: absolute;
+                bottom: -15px;
+                left: 0;
+                width: 40px;
+                height: 4px;
+                background-color: map-get($colors, secondary);
             }
         }
     }

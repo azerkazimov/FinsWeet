@@ -62,7 +62,7 @@ a {
   padding-bottom: 0px !important;
 }
 
-.p-1 {
+.p-1, .our-sponsors .sponsor-item, .team-members .team-member {
   padding: 5px !important;
 }
 
@@ -183,7 +183,7 @@ a {
   padding-bottom: 20px !important;
 }
 
-.p-5, .about-subscribes .subscribe-card, .hero, .podcast-banner .podcast-featured, .podcast-banner, .counters .counter, .section-content .podcast-image {
+.p-5, .about-subscribes .subscribe-card, .hero, .podcast-banner .podcast-featured, .podcast-banner, .our-sponsors .sponsor-item-custom, .counters .counter, .section-content .podcast-image {
   padding: 25px !important;
 }
 
@@ -191,7 +191,7 @@ a {
   padding-top: 25px !important;
 }
 
-.pb-5, .home .banner .banner-text h1 {
+.pb-5, .main-header h1 {
   padding-bottom: 25px !important;
 }
 
@@ -457,7 +457,7 @@ a {
   margin: 15px !important;
 }
 
-.mt-3, .form-group {
+.mt-3, .team-members .team-member .member-info .member-sosial, .form-group {
   margin-top: 15px !important;
 }
 
@@ -540,7 +540,7 @@ a {
   margin-right: 25px !important;
 }
 
-.my-5, .section-title, .client-slider-track {
+.my-5, .team-members .team-member .member-info h2, .section-title, .client-slider-track {
   margin-top: 25px !important;
   margin-bottom: 25px !important;
 }
@@ -673,7 +673,7 @@ a {
   margin-top: 50px !important;
 }
 
-.mb-10 {
+.mb-10, .team-members {
   margin-bottom: 50px !important;
 }
 
@@ -979,11 +979,11 @@ a {
   align-items: end !important;
 }
 
-.flex-justify-center, .host-banner .host-image, .counters .counter, .common-card-container i, .section-header-white, .btn-play i, .section-content .dream-image .dream-shapes, .section-content .youtube-image .youtube-subscribe, .section-content .section-image {
+.flex-justify-center, .host-banner .host-image, .our-sponsors .sponsor-item, .counters .counter, .common-card-container i, .section-header-white, .btn-play i, .section-content .dream-image .dream-shapes, .section-content .youtube-image .youtube-subscribe, .section-content .section-image {
   justify-content: center !important;
 }
 
-.flex-align-center, .home .banner .banner-waves, .counters .counter, .transform-shapes, .common-card-container i, .btn-play i, .btn-play a, .section-content .dream-image .dream-shapes, .section-content .youtube-image .youtube-subscribe, .section-content .section-text {
+.flex-align-center, .home .banner .banner-waves, .our-sponsors .sponsor-item, .counters .counter, .transform-shapes, .common-card-container i, .btn-play i, .btn-play a, .section-content .dream-image .dream-shapes, .section-content .youtube-image .youtube-subscribe, .section-content .section-text {
   align-items: center !important;
 }
 
@@ -995,7 +995,7 @@ a {
   align-items: space-between !important;
 }
 
-.flex-justify-space-around, .home .banner .banner-waves {
+.flex-justify-space-around, .home .banner .banner-waves, .our-sponsors .sponsor-item-custom {
   justify-content: space-around !important;
 }
 
@@ -1423,12 +1423,12 @@ a {
     margin-left: 41.6666666667%;
   }
 }
-.flex-container, .host-banner .host-image, .home .banner .banner-waves, .counters .counter, .transform-shapes, .listener-card-container .card-image .listener-description, .listener-card-container .card-image, .common-card-container i, .common-card-container .card-info, .common-card-container, .section-title, .section-header,
+.flex-container, .host-banner .host-image, .home .banner .banner-waves, .our-sponsors .sponsor-item-custom, .our-sponsors .sponsor-item, .counters .counter, .transform-shapes, .listener-card-container .card-image .listener-description, .listener-card-container .card-image, .common-card-container i, .common-card-container .card-info, .common-card-container, .section-title, .section-header,
 .section-header-white, .filter-btn-store, .btn-play i, .btn-play a, .section-content .dream-image .dream-shapes, .section-content .youtube-image .youtube-subscribe, .section-content .section-image, .section-content .section-text {
   display: flex;
 }
 
-.flex-column, .counters .counter, .listener-card-container .card-image .listener-description, .common-card-container .card-info, .common-card-container, .section-title, .section-header,
+.flex-column, .our-sponsors .sponsor-item-custom, .counters .counter, .listener-card-container .card-image .listener-description, .common-card-container .card-info, .common-card-container, .section-title, .section-header,
 .section-header-white {
   flex-direction: column;
 }
@@ -1601,8 +1601,8 @@ a {
   font-size: 15px !important;
 }
 
-.font-size-16, .home .banner .banner-text p, .section-header span,
-.section-header-white span, .form-control, .btn, .footer .footer-widgets .widget .footer-menu li, .header .header-main-menu .mobile-nav li span, .header .header-main-menu .header-nav-link span {
+.font-size-16, .team-members .team-member .member-info span, .section-header span,
+.section-header-white span, .main-header p, .form-control, .btn, .footer .footer-widgets .widget .footer-menu li, .header .header-main-menu .mobile-nav li span, .header .header-main-menu .header-nav-link span {
   font-size: 16px !important;
 }
 
@@ -1618,7 +1618,7 @@ a {
   font-size: 19px !important;
 }
 
-.font-size-20, .about-subscribes .subscribe-card .subscribe-description h4, .about-subscribes .subscribe-card .subscribe-description span, .footer .footer-widgets .widget h6 {
+.font-size-20, .about-subscribes .subscribe-card .subscribe-description h4, .about-subscribes .subscribe-card .subscribe-description span, .team-members .team-member .member-info .member-sosial i, .footer .footer-widgets .widget h6 {
   font-size: 20px !important;
 }
 
@@ -1634,7 +1634,7 @@ a {
   font-size: 23px !important;
 }
 
-.font-size-24, .counters .counter .counter-content p, .common-card-container .card-text h3 {
+.font-size-24, .our-sponsors .sponsor-item-custom h3, .counters .counter .counter-content p, .common-card-container .card-text h3 {
   font-size: 24px !important;
 }
 
@@ -1666,7 +1666,7 @@ a {
   font-size: 31px !important;
 }
 
-.font-size-32, .section-header h2,
+.font-size-32, .team-members .team-member .member-info h2, .section-header h2,
 .section-header-white h2, .section-content .dream-image .dream-shapes i, .section-content .youtube-image .youtube-subscribe i {
   font-size: 32px !important;
 }
@@ -1731,7 +1731,8 @@ a {
   font-size: 47px !important;
 }
 
-.font-size-48, .home .banner .banner-text h1, .counters .counter .counter-content h5, .counters .counter .counter-content span {
+.font-size-48, .counters .counter .counter-content h5,
+.counters .counter .counter-content span, .main-header h1 {
   font-size: 48px !important;
 }
 
@@ -1971,11 +1972,11 @@ a {
   font-weight: 300 !important;
 }
 
-.font-weight-400, .home .banner .banner-text p, .footer .footer-widgets .widget .footer-menu li, .header .header-main-menu .header-nav-link span {
+.font-weight-400, .main-header p, .footer .footer-widgets .widget .footer-menu li, .header .header-main-menu .header-nav-link span {
   font-weight: 400 !important;
 }
 
-.font-weight-500, .listener-card-container .card-image .listener-description p, .btn, .header .header-main-menu .mobile-nav li span {
+.font-weight-500, .listener-card-container .card-image .listener-description p, .btn-arrow, .btn, .header .header-main-menu .mobile-nav li span {
   font-weight: 500 !important;
 }
 
@@ -1984,8 +1985,9 @@ a {
   font-weight: 600 !important;
 }
 
-.font-weight-700, .home .banner .banner-text h1, .counters .counter .counter-content p, .counters .counter .counter-content h5, .counters .counter .counter-content span, .section-header a,
-.section-header-white a, .btn-play a, .footer .footer-widgets .widget h6, .active-link {
+.font-weight-700, .our-sponsors .sponsor-item-custom a:hover, .counters .counter .counter-content p, .counters .counter .counter-content h5,
+.counters .counter .counter-content span, .section-header a,
+.section-header-white a, .main-header h1, .btn-arrow:hover, .btn-play a, .footer .footer-widgets .widget h6, .active-link {
   font-weight: 700 !important;
 }
 
@@ -2432,6 +2434,48 @@ a {
   background-color: rgba(223, 223, 223, 0.5);
 }
 
+.btn-arrow {
+  padding: 14px 0px;
+  transition: all 0.3s;
+  cursor: pointer;
+  z-index: 5;
+  color: #832BC1;
+  position: relative;
+}
+.btn-arrow span {
+  width: 25px;
+  height: 3px;
+  position: absolute;
+  background-color: #832BC1;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: all 0.3s ease;
+  margin-left: 10px;
+}
+.btn-arrow span::after {
+  content: "";
+  position: absolute;
+  top: 126%;
+  right: -1px;
+  width: 10px;
+  height: 2px;
+  background-color: #832BC1;
+  transform: rotate(-45deg);
+}
+.btn-arrow span::before {
+  content: "";
+  position: absolute;
+  top: -83%;
+  right: -1px;
+  width: 10px;
+  height: 2px;
+  background-color: #832BC1;
+  transform: rotate(45deg);
+}
+.btn-arrow:hover span {
+  width: 40px;
+}
+
 .form-control {
   max-width: 100%;
   width: auto;
@@ -2549,6 +2593,18 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.main-header h1 {
+  max-width: 100%;
+  color: #14142B;
+  line-height: 1.2;
+}
+.main-header p {
+  max-width: 100%;
+  color: #14142B;
+  margin-bottom: 30px;
+  line-height: 1.75rem;
 }
 
 .section-header,
@@ -2687,11 +2743,74 @@ a {
   background-color: #503AE7;
   gap: 75px;
 }
-.counters .counter .counter-content h5, .counters .counter .counter-content span {
+.counters .counter .counter-content h5,
+.counters .counter .counter-content span {
   line-height: 1.2;
 }
 .counters .counter .counter-content p {
   line-height: 1.2;
+}
+
+.team-members .team-member .member-img img {
+  width: 100%;
+  object-fit: cover;
+}
+.team-members .team-member .member-info span {
+  color: #AFB0B9;
+}
+.team-members .team-member .member-info .member-sosial {
+  gap: 25px;
+}
+.team-members .team-member .member-info .member-sosial i {
+  color: #503AE7;
+  transition: all 0.3s ease;
+}
+.team-members .team-member .member-info .member-sosial i:hover {
+  color: #832BC1;
+}
+
+.our-sponsors .sponsor-item {
+  height: 224px;
+  min-height: 100%;
+  transition: all 0.3s ease-in;
+  background-color: #F4F2FF;
+}
+.our-sponsors .sponsor-item img {
+  transition: all 0.3s ease-in;
+  filter: brightness(0);
+}
+.our-sponsors .sponsor-item:hover {
+  background-color: #503AE7;
+}
+.our-sponsors .sponsor-item:hover img {
+  filter: brightness(100%);
+}
+.our-sponsors .sponsor-item-custom {
+  height: 224px;
+  min-height: 100%;
+  background-color: #503AE7;
+  color: #fff;
+  transition: all 0.3s ease-in;
+}
+.our-sponsors .sponsor-item-custom:hover {
+  background-color: #832BC1;
+}
+.our-sponsors .sponsor-item-custom a {
+  opacity: 0.8;
+  transition: 0.3s ease;
+  position: relative;
+}
+.our-sponsors .sponsor-item-custom a:hover {
+  opacity: 1;
+}
+.our-sponsors .sponsor-item-custom a::after {
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  left: 0;
+  width: 40px;
+  height: 4px;
+  background-color: #1AD993;
 }
 
 .form-wave {
@@ -2764,17 +2883,6 @@ a {
 }
 .home .banner .banner-text {
   max-width: 90%;
-}
-.home .banner .banner-text h1 {
-  max-width: 100%;
-  color: #14142B;
-  line-height: 1.2;
-}
-.home .banner .banner-text p {
-  max-width: 100%;
-  color: #14142B;
-  margin-bottom: 30px;
-  line-height: 1.75rem;
 }
 .home .banner .banner-waves {
   max-width: 90%;
@@ -2854,6 +2962,10 @@ a {
   background-position: 0 -200px !important;
 }
 
+p {
+  line-height: 1.75;
+}
+
 .about-banner .microphone {
   position: relative;
   overflow: hidden;
@@ -2876,4 +2988,8 @@ a {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+
+.blog-banner .blog-image img {
+  max-width: 100%;
 }/*# sourceMappingURL=style.css.map */

@@ -101,3 +101,55 @@
     background-color: rgba(223, 223, 223, 0.5);
   }
 }
+
+.btn-arrow {
+  @extend .font-weight-500;
+  padding: 14px 0px;
+  transition: all 0.3s;
+  cursor: pointer;
+  z-index: 5;
+  color: map-get($colors, info);
+  position: relative;
+
+  span {
+    width: 25px;
+    height: 3px;
+    position: absolute;
+    background-color: map-get($colors, info);
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all 0.3s ease;
+    margin-left: 10px;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 126%;
+      right: -1px;
+      width: 10px;
+      height: 2px;
+      background-color: map-get($colors, info);
+      transform: rotate(-45deg);
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: -83%;
+      right: -1px;
+      width: 10px;
+      height: 2px;
+      background-color: map-get($colors, info);
+      transform: rotate(45deg);
+    }
+
+  }
+
+  &:hover {
+    @extend .font-weight-700;
+
+    span {
+      width: 40px;
+    }
+  }
+}

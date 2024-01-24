@@ -1,3 +1,7 @@
+p{
+    line-height: 1.75;
+}
+
 .about-banner {
     .microphone {
         @extend .p-10;
@@ -29,8 +33,7 @@
     }
 }
 
-.team-bg-container{
-    
+.team-bg-container{    
     width: 100%;
     height: 320px;
     background-image: url('../images/about-team.png');

@@ -1,0 +1,52 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Jerome",
+      "surname": "Bell",
+      "position": "Founder & CEO",
+      "picture": "images/team/member-1.png",
+      "sosial":{
+        "facebook": "https://www.facebook.com/",
+        "twitter": "https://twitter.com/",
+        "linkedin": "https://linkedin.com/"
+      }
+    },
+    {
+      "id": 2,
+      "name": "Robert",
+      "surname": "Mill",
+      "position": "Cofounder",
+      "picture": "images/team/member-2.png",
+      "sosial":{
+        "facebook": "https://www.facebook.com/",
+        "twitter": "https://twitter.com/",
+        "linkedin": "https://linkedin.com/"
+      }
+    },
+    {
+      "id": 3,
+      "name": "Rehab",
+      "surname": "Walls",
+      "position": "Producer",
+      "picture": "images/team/member-3.png",
+      "sosial":{
+        "facebook": "https://www.facebook.com/",
+        "twitter": "https://twitter.com/",
+        "linkedin": "https://linkedin.com/"
+      }
+    },
+    {
+      "id": 4,
+      "name": "Steve",
+      "surname": "Winston",
+      "position": "Editor",
+      "picture": "images/team/member-4.png",
+      "sosial":{
+        "facebook": "https://www.facebook.com/",
+        "twitter": "https://twitter.com/",
+        "linkedin": "https://linkedin.com/"
+      }
+    }
+  ]
+}

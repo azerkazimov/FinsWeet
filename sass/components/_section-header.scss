@@ -1,4 +1,25 @@
 // styled header for all section
+
+.main-header {
+  h1 {
+    @extend .font-size-48;
+    @extend .font-weight-700;
+    @extend .pb-5;
+    max-width: 100%;
+    color: map-get($colors, inky);
+    line-height: 1.2;
+  }
+
+  p {
+    @extend .font-weight-400;
+    @extend .font-size-16;
+    max-width: 100%;
+    color: map-get($colors, inky);
+    margin-bottom: 30px;
+    line-height: 1.75rem;
+  }
+}
+
 .section-header,
 .section-header-white {
   @extend .flex-container;
@@ -14,15 +35,18 @@
     @extend .my-4;
     line-height: 1.2;
   }
-  a{
+
+  a {
     @extend .font-weight-700;
     color: map-get($colors, primary);
     transition: all 0.3s ease;
-    &:hover{
+
+    &:hover {
       color: map-get($colors, info)
     }
   }
-  span{
+
+  span {
     @extend .font-weight-600;
     @extend .font-size-16;
     letter-spacing: 3px;
@@ -40,7 +64,8 @@
   h2 {
     color: map-get($colors, light) !important;
   }
-  p{
+
+  p {
     color: map-get($colors, natural);
     line-height: 1.75
   }
