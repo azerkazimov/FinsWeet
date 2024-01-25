@@ -1618,7 +1618,7 @@ a {
   font-size: 19px !important;
 }
 
-.font-size-20, .about-subscribes .subscribe-card .subscribe-description h4, .about-subscribes .subscribe-card .subscribe-description span, .team-members .team-member .member-info .member-sosial i, .footer .footer-widgets .widget h6 {
+.font-size-20, .contact-form .contact-us .collaboration h4, .about-subscribes .subscribe-card .subscribe-description h4, .about-subscribes .subscribe-card .subscribe-description span, .team-members .team-member .member-info .member-sosial i, .footer .footer-widgets .widget h6 {
   font-size: 20px !important;
 }
 
@@ -1985,7 +1985,7 @@ a {
   font-weight: 600 !important;
 }
 
-.font-weight-700, .our-sponsors .sponsor-item-custom a:hover, .counters .counter .counter-content p, .counters .counter .counter-content h5,
+.font-weight-700, .contact-form .contact-us .collaboration h4, .our-sponsors .sponsor-item-custom a:hover, .counters .counter .counter-content p, .counters .counter .counter-content h5,
 .counters .counter .counter-content span, .section-header a,
 .section-header-white a, .main-header h1, .btn-arrow:hover, .btn-play a, .footer .footer-widgets .widget h6, .active-link {
   font-weight: 700 !important;
@@ -2498,6 +2498,12 @@ a {
   box-shadow: 0 0 0 0 2rem rgba(0, 123, 255, 0.25);
 }
 
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
 .input-group {
   display: flex;
   flex-wrap: wrap;
@@ -2992,4 +2998,27 @@ p {
 
 .blog-banner .blog-image img {
   max-width: 100%;
+}
+
+.contact-form .contact-us .collaboration h4 {
+  color: #503AE7;
+}
+
+.subscribe-container img {
+  padding: 10px 0;
+}
+
+.contact-shapes .contact-shape {
+  width: 90px;
+  background-color: #503AE7;
+}
+.contact-shapes .c-shape-one {
+  height: 212px;
+}
+.contact-shapes .c-shape-two {
+  height: 312px;
+  background-color: #1AD993;
+}
+.contact-shapes .c-shape-three {
+  height: 128px;
 }/*# sourceMappingURL=style.css.map */

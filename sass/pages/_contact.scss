@@ -1,0 +1,38 @@
+.contact-form {
+    .contact-us {
+        .collaboration {
+            h4 {
+                @extend .font-size-20;
+                @extend .font-weight-700;
+                color: map-get($colors, primary);
+            }
+        }
+    }
+}
+
+.subscribe-container {
+    img {
+        padding: 10px 0;
+    }
+}
+
+.contact-shapes {
+    .contact-shape {
+        width: 90px;
+        background-color: map-get($colors, primary);
+    }
+
+    .c-shape-one {
+        height: 212px;
+    }
+
+    .c-shape-two {
+        height: 312px;
+        background-color: map-get($colors, secondary);
+    }
+
+    .c-shape-three {
+        height: 128px;
+
+    }
+}
