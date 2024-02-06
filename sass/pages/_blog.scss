@@ -1,8 +1,44 @@
-.blog-banner {
+.blog-banner,
+.podcast-single-banner {
     .blog-image {
-        img{
+        img {
             max-width: 100%;
+            width: 100%;
+            object-fit: cover;
         }
     }
 }
 
+.training-background {
+    width: 100%;
+    height: 472px;
+    background-image: url('../images/training.png');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.single-description-blog {
+    h3 {
+        @extend .font-size-24;
+        @extend .my-3;
+    }
+
+    li {
+        @extend .pb-2;
+        list-style: inside;
+    }
+}
+
+.aside-brands {
+    @extend .flex-container;
+    @extend .flex-justify-center;
+    @extend .flex-align-center;
+
+    gap: 20px;
+
+    img {
+        width: 60%;
+    }
+}

@@ -63,7 +63,6 @@
     }
 }
 
-
 .listener-card-container {
     display: flex;
     flex-direction: column;
@@ -215,6 +214,25 @@
                     }
                 }
             }
+        }
+    }
+}
+
+.single-user-comment{
+    @extend .px-5;
+    @extend .my-5;
+    border-left: 15px solid map-get($colors, primary);
+
+    .user-info{
+    
+        h2{
+            @extend .mt-3;
+            @extend .mb-1;
+        }
+    
+        .member-sosial{
+            @extend .mt-3;
+            gap: 0 10px;
         }
     }
 }

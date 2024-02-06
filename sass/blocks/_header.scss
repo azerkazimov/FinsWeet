@@ -70,6 +70,16 @@
       }
     }
 
+    a.active-link {
+      span {
+        @extend .font-weight-700;
+      }
+
+      color: #7c4fe0 !important;
+    }
+
+
+
     // ===BURGER-MENU===
     .burger-menu {
       position: relative;
@@ -160,10 +170,4 @@
       }
     }
   }
-
-}
-
-.active-link {
-  @extend .font-weight-700;
-  color: map-get($colors, info)
 }

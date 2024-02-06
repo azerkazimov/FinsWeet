@@ -11,9 +11,8 @@
 
     .podcast-featured{
         @extend .p-5;
-        background-color: map-get($colors, primary);
+        background-color: #513ae78d;
         border-left: 8px solid map-get($colors, secondary);
-        opacity: 0.7;
 
         span{
             color: map-get($colors, natural);

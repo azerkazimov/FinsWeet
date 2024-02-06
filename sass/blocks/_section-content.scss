@@ -1,10 +1,14 @@
 // Common styles for sections 
 .section-content {
   @extend .my-10;
+  p{
+    @extend .mb-5;
+  }
 
   .section-text {
     @extend .px-10;
     @extend .flex-container;
+    @extend .flex-column;
     @extend .flex-align-center;
     max-width: 90%;
 

@@ -1,18 +1,98 @@
-@media (max-width: 576px) {
+@media (min-width: 1200px) {
   .container {
-    max-width: 540px !important;
+    max-width: 1160px !important;
   }
-
-  .btn{
-    flex-grow: 1;
-  }
-
-  
 }
 
+@media (min-width: 993px) {
+  .burger-menu {
+    display: none;
+  }
+}
 
+@media screen and (max-width: 992px) {
+  .container {
+    max-width: 960px !important;
+  }
+
+  .burger-menu {
+    display: block;
+    max-width: 100%;
+  }
+
+  .client-slider-track {
+    grid-auto-columns: calc((100% / 3)) !important;
+  }
+
+  .header-nav-item,
+  .d-none {
+    display: none;
+  }
+
+  .banner-text,
+  .banner-waves {
+    max-width: 100% !important;
+    text-align: center;
+  }
+
+  .banner-waves {
+    margin: 50px 0;
+  }
+
+  .section-header,
+  .section-header-white,
+  .section-text {
+    text-align: center;
+    max-width: 100% !important;
+  }
+
+  .podcast-bg {
+    background: linear-gradient(to bottom,
+        map-get($colors, natural) 0%,
+        map-get($colors, natural) 50%,
+        map-get($colors, primary) 50%,
+        map-get($colors, primary) 100%,
+      ) !important;
+  }
+
+  .youtube-subscribe {
+    right: 20px !important;
+  }
+
+  .youtube-image {
+    background-position: center !important;
+    background-size: cover !important;
+  }
+
+  .microphone {
+    overflow: hidden;
+  }
+
+  .section-content {
+    text-align: center;
+  }
+
+  .stiky-arrow-up {
+    left: 88% !important;
+  }
+
+
+  .host-image {
+    .clipped-image {
+      width: 53% !important;
+    }
+
+    svg {
+      left: 0 !important;
+    }
+  }
+
+}
 
 @media screen and (max-width: 767px) {
+  .container {
+    max-width: 720px !important;
+  }
 
   .footer {
     text-align: center;
@@ -31,84 +111,14 @@
   }
 }
 
-@media (min-width: 768px) {
-  .container {
-    max-width: 720px !important;
-  }
-}
-
-@media (min-width: 992px) {
-  .container {
-    max-width: 960px !important;
-  }
-
-  .burger-menu {
-    display: block;
-    max-width: 100%;
-  }
-}
-
-@media screen and (max-width: 992px) {
-  .client-slider-track {
-    grid-auto-columns: calc((100% / 3)) !important;
-  }
-
-  .header-nav-item,
-  .d-none {
-    display: none;
-  }
-
-  .banner-text,
-  .banner-waves {
-    max-width: 100% !important;
-    text-align: center;
-  }
-
-  .banner-waves{
-    margin: 50px 0;
-  }
-
-  .section-header,
-  .section-header-white,
-  .section-text{
-    text-align: center;
-    max-width: 100% !important;
-  }
-  .podcast-bg {
-    background: linear-gradient(to bottom,
-        map-get($colors, natural) 0%,
-        map-get($colors, natural) 50%,
-        map-get($colors, primary) 50%,
-        map-get($colors, primary) 100%,
-      ) !important;
-  }
-
-  .youtube-subscribe{
-    right: 20px !important;
-  }
-
-  .microphone {
-    overflow: hidden;
-  }
-
-  .stiky-arrow-up {
-    left: 88% !important;
-  }
-}
-
-@media (min-width: 993px) {
-  .burger-menu {
-    display: none;
-  }
-}
-
-@media (min-width: 1200px) {
-  .container {
-    max-width: 1160px !important;
-  }
-}
-
 @media screen and (max-width: 576px) {
+  .container {
+    max-width: 540px !important;
+  }
+
+  .btn {
+    flex-grow: 1;
+  }
 
   .banner {
     overflow: hidden;
@@ -122,10 +132,7 @@
     grid-auto-columns: calc((100% / 2)) !important;
 
     .client-pic {
-      
-         width: 50% !important;
-
-      
+      width: 50% !important;
     }
   }
 }

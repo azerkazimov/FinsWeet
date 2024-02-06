@@ -7,11 +7,21 @@ import {
   generateBlog,
 } from "./showCard.js"; // Get generate cards
 import { iconsDB, usersDB, counterDB, sponsorDB, blogDB } from "./db.js"; // Get datas from database
-import { fetchData, fetchPost, fetchUser } from "./api-store.js"; // Initialize API
-import { initializeBurgerMenu, initializeStickyNavBar } from "./header.js"; // Header
+import {
+  fetchData,
+  fetchPost,
+  fetchUser,
+  fetchSinglePodcast,
+  fetchSingleBlog,
+} from "./api-store.js"; // Initialize API
+import { initializeBurgerMenu, initializeStickyNavBar, setActiveLinks } from "./header.js"; // Header
 import { initializeSlider } from "./slider.js"; // Initialize custom slider
 import { setupFilterButtons } from "./filter.js"; // Filter buttons by category
 import { setCounter } from "./counter.js"; // Counter
+
+// Set Single Podcast from API data
+const singlePodcast = document.querySelector(".podcast-single-banner");
+fetchSinglePodcast(singlePodcast);
 
 // Burger menu
 initializeBurgerMenu();
@@ -72,7 +82,6 @@ const counterContainer = document.querySelector(".counters-container");
 generateCounter(counterContainer, counterDB);
 
 // About Icons subscribe
-
 const iconContainer = document.querySelector(".about-container");
 generateIcon(iconContainer, iconsDB);
 
@@ -91,3 +100,8 @@ generateSponsor(sponsor, sponsorDB);
 // generate blogs
 const blogItem = document.querySelector(".blogs");
 generateBlog(blogDB, blogItem);
+
+const singleBlog = document.querySelector(".blog-content");
+fetchSingleBlog(singleBlog);
+
+document.addEventListener("DOMContentLoaded", setActiveLinks);

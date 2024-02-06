@@ -26,3 +26,21 @@ export function initializeStickyNavBar() {
     });
   });
 }
+
+// Set active link to nav-bar
+export const setActiveLinks = function () {
+  const navLinks = document.querySelectorAll(".header-nav-link");
+  const mobileLinks = document.querySelectorAll(".mobile-nav-link");
+  const currentUrl = window.location.href;
+
+  function setActiveLink(links) {
+    links.forEach((link) => {
+      if (currentUrl.includes(link.getAttribute("href"))) {
+        link.classList.add("active-link");
+      }
+    });
+  }
+
+  setActiveLink(navLinks);
+  setActiveLink(mobileLinks);
+};

@@ -6,19 +6,20 @@
 
         position: relative;
         width: 100%;
-        height: 500px;
+        min-height: 100%;
+        height: 700px;
         
         .clipped-image {
-            width: 100%;
+            width: 88%;
             height: auto;
             display: block;
-            object-fit: contain;
+            object-fit: cover;
         }
 
         svg {
             position: absolute;
             top: 0;
-            left: 0;
+            left: 34px;
             overflow: hidden;
 
             path {
