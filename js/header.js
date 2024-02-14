@@ -19,9 +19,9 @@ export function initializeStickyNavBar() {
       header.classList.toggle("sticky", window.scrollY > 10);
 
       if (header.classList.contains("sticky")) {
-        logo.src = "images/Logo-white.png";
+        logo.src = "images/Logo-white-min.png";
       } else {
-        logo.src = "images/Logo.png";
+        logo.src = "images/Logo-min.png";
       }
     });
   });
